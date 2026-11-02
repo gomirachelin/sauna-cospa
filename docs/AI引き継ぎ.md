@@ -131,7 +131,7 @@
 - 解決方式は2つ。**Kenjiさんが決めかねているのでCodexの意見を求めています。**
   - **方式A**：リポジトリ名を `kenji0618y.github.io` に変更（DNS不要、すぐ確認できるが、リポジトリ名変更の影響あり）
   - **方式B（Claudeの推奨）**：テスト用サブドメイン `test.sauna-cospa.com` を割り当て（DNSにCNAMEを1行追加するだけ。本番とメールには触らない。本番切替の予行演習になる）
-- **却下済み**：リポジトリ名を `sauna-cospa.com` にする案（URLは `kenji0618y.github.io/sauna-cospa.com/` となりフォルダ形式のままで解決しない）、1,434か所の相対パス化（リスク大）、`<base>`タグ（`/`始まりには効かない）。
+- **却下済み**：リポジトリ名を `sauna-cospa.com` にする案（URLは `gomirachelin.github.io/sauna-cospa.com/` となりフォルダ形式のままで解決しない）、1,434か所の相対パス化（リスク大）、`<base>`タグ（`/`始まりには効かない）。
 - **詳細と相談事項は `docs/GitHubPagesのパス問題と方式選択.md` に記載。Codexはまずこれを読んでください。**
 - Claudeの環境は `sauna-cospa.com` / `script.google.com` / `kenji0618y.github.io` のいずれにも接続できない（組織のネットワーク方針）。**公開URLの確認・DNS操作・GitHub設定画面の操作はKenjiさんかCodexが行う必要がある。**
 

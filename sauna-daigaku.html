@@ -569,9 +569,9 @@ footer{border-top:1px solid var(--line-soft);margin-top:40px;padding:40px 0 120p
       <div class="fcol">
         <h4>GOMIRACHELIN</h4>
         <a href="https://docs.google.com/forms/d/e/1FAIpQLSecstBtc6D7TJbwVgMfckm-nqPG86oogW3xNu6T56cMK5IqOw/viewform" target="_blank" rel="noopener">🎓 入学登録（無料）</a>
-        <a href="https://kenji0618y.github.io/sauna-cospa" target="_blank" rel="noopener">本家ブログを見る →</a>
-        <a href="https://kenji0618y.github.io/sauna-cospa/%e3%83%a9%e3%83%b3%e3%82%ad%e3%83%b3%e3%82%b0/" target="_blank" rel="noopener">コスパ・ランキング</a>
-        <a href="https://kenji0618y.github.io/sauna-cospa/reviews/" target="_blank" rel="noopener">正直レビュー一覧</a>
+        <a href="https://gomirachelin.github.io/sauna-cospa" target="_blank" rel="noopener">本家ブログを見る →</a>
+        <a href="https://gomirachelin.github.io/sauna-cospa/%e3%83%a9%e3%83%b3%e3%82%ad%e3%83%b3%e3%82%b0/" target="_blank" rel="noopener">コスパ・ランキング</a>
+        <a href="https://gomirachelin.github.io/sauna-cospa/reviews/" target="_blank" rel="noopener">正直レビュー一覧</a>
       </div>
     </div>
     <div class="disc" id="footDisc"></div>
@@ -4004,7 +4004,7 @@ function renderHome(){
         <h3>知識を深めたら、次は"本物"を体験しに。</h3>
         <p>忖度なし・コスパで斬る正直サウナレビュー。ここで学んだ目で、本当に価値ある一軒を見つけてください。</p>
       </div>
-      <a class="btn gold" href="https://kenji0618y.github.io/sauna-cospa" target="_blank" rel="noopener">本家ブログを見る <span class="ar">→</span></a>
+      <a class="btn gold" href="https://gomirachelin.github.io/sauna-cospa" target="_blank" rel="noopener">本家ブログを見る <span class="ar">→</span></a>
     </div>
   </div></section>`;
   renderShelf("homeShelf");
@@ -4109,7 +4109,7 @@ function renderLesson(chId,lsId){
         <h3>もっと知りたくなったら</h3>
         <p>実際の施設で、学んだ知識を確かめてみませんか。忖度なしの正直レビューが待っています。</p>
       </div>
-      <a class="btn ghost" href="https://kenji0618y.github.io/sauna-cospa" target="_blank" rel="noopener">ブログへ →</a>
+      <a class="btn ghost" href="https://gomirachelin.github.io/sauna-cospa" target="_blank" rel="noopener">ブログへ →</a>
     </div>
     <div class="lesson-nav">
       ${prev?`<button class="btn ghost" onclick="go('lesson',{ch:'${ch.id}',ls:'${prev.id}'})">‹ 前のレッスン</button>`:`<span></span>`}
@@ -4212,7 +4212,7 @@ function renderCert(tid){
   const t=tierMeta(tid);const p=tierProgress(tid);
   const cid="SU-"+tid.toUpperCase()+"-"+(1000+Math.floor(S.xp)%9000);
   const share=`サウナ大学で「${t.name}（${t.sub.split('・')[1]||t.sub}）」を修了しました！🧖 #サウナ大学 #GOMIRACHELIN`;
-  const url="https://kenji0618y.github.io/sauna-cospa";
+  const url="https://gomirachelin.github.io/sauna-cospa";
   const xurl="https://twitter.com/intent/tweet?text="+encodeURIComponent(share)+"&url="+encodeURIComponent(url);
   document.getElementById("view-cert").innerHTML=`<section class="section"><div class="wrap">
     <div class="backlink" onclick="go('learn')">‹ カリキュラムにもどる</div>
@@ -4795,7 +4795,7 @@ function renderResult(){
   if(pct===100)award("perfect");
   const msg=pct>=90?"🏆 素晴らしい！サウナ賢者に近づいています。":pct>=70?"👍 よくできました！苦手問題で復習しましょう。":pct>=50?"📚 半分以上正解！もう少しで壁を突破できます。":"💪 ここからが本番。苦手問題を攻略しましょう！";
   const share=`サウナ大学の腕試しで ${total}問中${correct}問正解（${pct}%）！🧖 #サウナ大学 #GOMIRACHELIN`;
-  const xurl="https://twitter.com/intent/tweet?text="+encodeURIComponent(share)+"&url="+encodeURIComponent("https://kenji0618y.github.io/sauna-cospa");
+  const xurl="https://twitter.com/intent/tweet?text="+encodeURIComponent(share)+"&url="+encodeURIComponent("https://gomirachelin.github.io/sauna-cospa");
   document.getElementById("view-session").innerHTML=`<section class="section"><div class="wrap result">
     <div class="rring" style="background:conic-gradient(var(--gold) ${pct*3.6}deg,var(--bg-2) 0)">
       <div style="width:130px;height:130px;border-radius:50%;background:var(--surface);display:grid;place-items:center">
@@ -4824,7 +4824,7 @@ const SHELF = [
  {ic:"⛺",t:"テントサウナ",d:"最小投資で始める自分サウナ（ch40）。購入前に換気とCO対策の章を必ず復習。",label:"探してみる",url:"https://www.amazon.co.jp/s?k=テントサウナ&tag=gomirachelin-22"},
  {ic:"🚨",t:"一酸化炭素チェッカー",d:"テント・小屋サウナの必需品（ch40/43）。数千円で命を守る、最優先の装備。",label:"探してみる",url:"https://www.amazon.co.jp/s?k=一酸化炭素チェッカー&tag=gomirachelin-22"},
  {ic:"🔥",t:"サウナ用薪ストーブ",d:"小屋・テントの心臓部（ch43）。離隔距離と消防届出の確認を忘れずに。",label:"探してみる",url:"https://www.amazon.co.jp/s?k=サウナ+薪ストーブ&tag=gomirachelin-22"},
- {ic:"♨️",t:"GOMIRACHELIN 正直レビュー",d:"学んだ知識で“本物”を選ぶ。忖度なし・コスパで斬るサウナレビュー本家。",label:"ブログへ",url:"https://kenji0618y.github.io/sauna-cospa"}
+ {ic:"♨️",t:"GOMIRACHELIN 正直レビュー",d:"学んだ知識で“本物”を選ぶ。忖度なし・コスパで斬るサウナレビュー本家。",label:"ブログへ",url:"https://gomirachelin.github.io/sauna-cospa"}
 ];
 function renderShelf(elId){
   const el=document.getElementById(elId); if(!el)return;

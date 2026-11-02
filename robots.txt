@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://kenji0618y.github.io/sauna-cospa/sitemap.xml
+Sitemap: https://gomirachelin.github.io/sauna-cospa/sitemap.xml

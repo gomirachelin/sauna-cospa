@@ -1,17 +1,24 @@
+
+## 組織 gomirachelin へ移設（2026-11-02・Grok Bot）
+- 公開リポジトリを個人 `kenji0618y` から組織 `gomirachelin` へ transfer。Pages URL は `https://gomirachelin.github.io/sauna-cospa/`。
+- 旧 `https://kenji0618y.github.io/sauna-cospa/` は転送専用の新規リポジトリ `kenji0618y/sauna-cospa` で新URLへ。
+- `sauna-cospa-com-redirect` の転送先も新URLへ更新。CNAME は足していない。
+- サイト内の絶対URL（sitemap・urls.json・記事canonical等）を組織URLへ一括置換。
+
 # サイトの現在の状態（STATE.md）
 
 ## ⚠️ 重要：kenji0618y.github.io に CNAME を足さないこと（2026-10-08）
 
-- **Do NOT add a CNAME to kenji0618y.github.io: it moves every project site (kekkon-roadmap, henshu-lock) to that domain. sauna-cospa.com lives in kenji0618y/sauna-cospa.**
+- **Do NOT add a CNAME to kenji0618y.github.io: it moves every project site (kekkon-roadmap, henshu-lock) to that domain. sauna-cospa.com lives in gomirachelin/sauna-cospa.**
 - 2026-10-06 にここへ `CNAME`（sauna-cospa.com）を足したところ、GitHubの仕様で同じアカウントのプロジェクトサイト（kekkon-roadmap・henshu-lock）まで `sauna-cospa.com/〜` へ転送され、結婚ロードマップの端末データとLINE通知が見えなくなった（公式：https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages ）。
-- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を **https://github.com/kenji0618y/sauna-cospa** へ履歴ごと移し、独自ドメイン `sauna-cospa.com` はそちらに付け替えた。サイトの正本・作業記録の続きは sauna-cospa リポジトリ。
+- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を **https://github.com/gomirachelin/sauna-cospa** へ履歴ごと移し、独自ドメイン `sauna-cospa.com` はそちらに付け替えた。サイトの正本・作業記録の続きは sauna-cospa リポジトリ。
 - 旧リポジトリ kenji0618y.github.io には、`sauna-cospa.com` へ転送するだけの `index.html`・`404.html`（外部スクリプトなし）と、2026-10-08 までの作業記録（docs/）だけを残している。ここにサイトのページや外部スクリプト（GTM・解析など）を戻さないこと。
 - DNS（ConoHa）は変更していない。www の CNAME `kenji0618y.github.io` はGitHubの推奨どおりで、プロジェクトリポジトリの独自ドメインでもこのままでよい。
 
-## サイトを kenji0618y/sauna-cospa へ移動（2026-10-08・Grok Bot）
+## サイトを gomirachelin/sauna-cospa へ移動（2026-10-08・Grok Bot）
 
 - 利用者（Kenji）の承認・一任を得て実施。理由：ユーザーサイト（kenji0618y.github.io）の独自ドメインは同じアカウントの全プロジェクトサイトに引き継がれ、結婚ロードマップが `sauna-cospa.com/kekkon-roadmap/` へ転送されていたため。
-- 08:01 JST：公開リポジトリ `kenji0618y/sauna-cospa` を作り、kenji0618y.github.io の main を履歴ごと（147コミット）push。Pages を同じ方式（legacy・main・/）で有効化し、08:02 にビルド成功。
+- 08:01 JST：公開リポジトリ `gomirachelin/sauna-cospa` を作り、kenji0618y.github.io の main を履歴ごと（147コミット）push。Pages を同じ方式（legacy・main・/）で有効化し、08:02 にビルド成功。
 - 08:03:54 JST：kenji0618y.github.io から `CNAME` を削除して転送ページだけに（コミット f92bf14）、Pages の cname を空に。08:03:55 に sauna-cospa の Pages に cname `sauna-cospa.com` を設定。証明書（sauna-cospa.com・www）は承認済みのまま。08:04 に HTTPS強制をオン。
 - 10秒ごとの確認では `https://sauna-cospa.com/` は切替中もずっと200（止まった時間は観測されず）。
 - DNS（ConoHa）は変更なし。www の CNAME `kenji0618y.github.io` はプロジェクトリポジトリの独自ドメインでもGitHub推奨どおり。
@@ -22,7 +29,7 @@
 - **ConoHa解約の方針（2026-10-08に整理）**：サイト（Web）はもうConoHaを使っていない。ConoHa WINGは前払いの「WINGパック」（ダッシュボードの契約満了日 2027-07-01）。公式手順ではWINGパックの解約＝「自動更新をOFF」にして満了日で終了（自動更新は満了日の30日前に行われるので、2027-06-01より前にOFF）。**ConoHaのアカウント（退会）は残す**：ドメイン sauna-cospa.com（有料・更新期限2027-06-14・WINGパックの無料ドメインではない）とDNS設定がConoHaにあるため。WING終了までに①ConoHaのDNSがWINGなしでも使えるか確認、または別のDNSへ移す ②`@sauna-cospa.com` のメールを使っていないか確認、をする。判断と理由：前払い分は満了日まで使えるので、急いで削除する得はなく、予備として置いておける。
 
 - 利用者の依頼（「問題あれば直して」）で、Grokの移動作業のあとを点検した。
-- 点検結果：サイトマップ掲載の全ページが `server: GitHub.com` で200。Amazonの必須表記は地図と転送用2ページ以外の全ページ、Amazon枠はレビュー47本すべてにある。存在しないパスでも http→https の301を確認（HTTPS強制は sauna-cospa 側でも有効）。証明書は sauna-cospa.com・www とも有効（期限2027-01-04、GitHubが自動更新）。DNS（A 4件・www CNAME）とメール（MX・SPF）は変化なし。`kenji0618y.github.io/sauna-cospa/` は `https://sauna-cospa.com/` へ301。kekkon-roadmap・henshu-lock は `kenji0618y.github.io` で200、旧サイトのURLは同じパスのまま sauna-cospa.com へ転送される。
+- 点検結果：サイトマップ掲載の全ページが `server: GitHub.com` で200。Amazonの必須表記は地図と転送用2ページ以外の全ページ、Amazon枠はレビュー47本すべてにある。存在しないパスでも http→https の301を確認（HTTPS強制は sauna-cospa 側でも有効）。証明書は sauna-cospa.com・www とも有効（期限2027-01-04、GitHubが自動更新）。DNS（A 4件・www CNAME）とメール（MX・SPF）は変化なし。`gomirachelin.github.io/sauna-cospa/` は `https://sauna-cospa.com/` へ301。kekkon-roadmap・henshu-lock は `kenji0618y.github.io` で200、旧サイトのURLは同じパスのまま sauna-cospa.com へ転送される。
 - サウナのサイトのサービスワーカーは範囲が `/sauna-daigaku.html` だけ（しかも `/sauna-sw.js` は無く登録されない）なので、github.io 時代に他のアプリへ影響した可能性はない。
 - 修正：`sitemap.xml` から、`noindex` の転送用ページ2件（`オアシスサウナ-アスティル-2/`・`上野ステーションホステル-オリエンタル2-2/`）を外した（62→60件）。正式URLは掲載済み。判断と理由：検索エンジンに出さないページをサイトマップで送ると、Search Consoleで「noindex なのに送信された」というエラーになるため。
 - 結婚ロードマップの残りデータ：利用者の許可（「見比べて必要なら直してもよい」）を得て、PCのChromeの sauna-cospa.com 側を確認（`robots.txt` 上で読み取りのみ・中身は読まない）。手帳の記録（`futari-miraicho-v1`）と同期設定は**無し**。残っていたのは「自分の名前」の設定1件と合言葉の鍵（IndexedDB `site-lock`）だけ＝取り出すものは無い。
@@ -698,7 +705,7 @@ WordPress（`https://sauna-cospa.com`）から書き出したもので、ConoHa�
 - 戻し方：問題があれば `0f89c3b` を戻すとHTMLだけ旧ConoHa画像URLへ戻せる。画像追加 `146bfa6` は表示に影響しないため、そのまま保管してもよい。
 
 ## 2026-10-22 独自ドメイン sauna-cospa.com を外し、GitHub無料アドレスへ移行
-- 新URL: https://kenji0618y.github.io/sauna-cospa/ （理由：ドメイン不要・月額費用ゼロにするため。ConoHa WING自動更新OFF済、ドメイン期限2027-06-14）
+- 新URL: https://gomirachelin.github.io/sauna-cospa/ （理由：ドメイン不要・月額費用ゼロにするため。ConoHa WING自動更新OFF済、ドメイン期限2027-06-14）
 - CNAME削除、Pages設定のカスタムドメイン削除。全HTML/CSS/JS/XMLのルート絶対パス "/..." を "/sauna-cospa/..." に、https://sauna-cospa.com を新URLに置換（docs/ と scripts/ は対象外）。
 - kenji0618y.github.io（旧リポ）の転送先も新URLへ変更。CNAMEは足していない。
 - 注意：scripts/gen_reviews.py は旧パスのまま。再生成するときは /sauna-cospa/ 前提に直すこと。
