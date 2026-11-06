@@ -124,73 +124,73 @@
 
   <main class="wrap">
     <section class="status-grid" aria-label="現在の状況">
-      <div class="card now"><span class="now-label">現在地</span><strong>フェーズ5：切替・30日監視</strong><span>10月6日にsauna-cospa.comをGitHub版へ切替済み。11月5日ごろまで様子を見る</span></div>
-      <div class="card stat"><b>4 / 7</b><span>フェーズ完了（2は一部残り）</span></div>
-      <div class="card stat"><b>2027/7/1</b><span>ConoHa WING契約満了日</span></div>
-      <div class="card stat"><b>30日</b><span>切替後の監視期間</span></div>
+      <div class="card now"><span class="now-label">現在地</span><strong>移行完了・通常運用とサイト改善</strong><span>組織 gomirachelin への移設・無料アドレス化・ConoHa自動更新OFF・30日監視まで完了</span></div>
+      <div class="card stat"><b>7 / 7</b><span>移行フェーズ完了</span></div>
+      <div class="card stat"><b>¥0 / 月</b><span>GitHub無料アドレスで運用中</span></div>
+      <div class="card stat"><b>109 / 174</b><span>地図の座標ピン登録済み</span></div>
     </section>
 
-    <aside class="next"><span class="next-badge">次の1手</span><p><strong>11月5日ごろまで30日監視。表示崩れ・404・アクセス解析を確認し、直すときはGitHub側だけで直す。</strong> sauna-cospa.comは10月6日にGitHub版へ切替済み（HTTPS強制オン、メール設定は変更なし）。ConoHaは復旧用に残し、Amazonの本審査が終わるまで解約しません。</p></aside>
-    <aside class="next"><span class="next-badge">ドメイン切替 完了</span><p><strong>sauna-cospa.com をGitHub Pagesへ切り替えました（2026-10-06）。</strong> ConoHaのDNSでWeb用の設定だけを変更し、証明書の発行とHTTPS強制まで確認済みです。戻し方は「dns-mail-公開記録.md」にあります。</p></aside>
-    <aside class="next"><span class="next-badge">公開問題 解決済み</span><p><strong>リポジトリを <code>kenji0618y.github.io</code> へ変更し、ルートURLで正常公開しました。</strong> トップ、CSS、メニュー、静的地図を確認済みです。DNS、ConoHa、メールには触れていません。</p></aside>
-    <aside class="next"><span class="next-badge">地図更新済み</span><p><strong>ログイン不要の静的地図をGitHubへ追加しました（2026-09-06）。</strong> 47都道府県・174施設を確認し、全60ページのメニューをGASからGitHub内の地図へ変更しました。</p></aside>
+    <aside class="next"><span class="next-badge">次の1手</span><p><strong>10月28日に追加した「さふぃスパ沖縄」の未反映分（正本データ・レビュー一覧・10項目別ランキング・地図）をそろえ、生成スクリプトを新URL（<code>/sauna-cospa/</code>）に対応させます。</strong> 続いて、地図の座標未登録施設（残り65件）の補完などを進めます。</p></aside>
+    <aside class="next"><span class="next-badge">組織移設 完了</span><p><strong>公開先を組織 <code>gomirachelin</code>（<code>https://gomirachelin.github.io/sauna-cospa/</code>）へ移設しました（2026-11-02）。</strong> 旧アドレス（<code>sauna-cospa.com</code>・<code>kenji0618y.github.io/sauna-cospa/</code>）からの自動転送も設定済みです。</p></aside>
+    <aside class="next"><span class="next-badge">完全無料化 完了</span><p><strong>独自ドメインを外してGitHub無料アドレスへ切り替え、ConoHa WINGの自動更新もOFFにしました（2026-10-22）。</strong> 契約満了日（WING：2027/7/1、ドメイン：2027/6/14）で自然に終了し、今後の維持費はゼロです。</p></aside>
+    <aside class="next"><span class="next-badge">地図更新済み</span><p><strong>ログイン不要の静的地図をGitHubへ追加しました（2026-09-06）。</strong> 47都道府県・174施設（うち109施設にピン表示）を確認し、全ページのメニューをGitHub内の地図へ接続しています。</p></aside>
 
     <section>
       <div class="section-head"><div><h2>移行の7フェーズ</h2><p class="hint">工程を押すと詳細が切り替わります</p></div></div>
       <div class="timeline" id="timeline">
         <button class="phase done" data-phase="0"><span class="phase-no">0 · 完了</span><span class="phase-name">準備</span><span class="phase-time">9月5日まで</span></button>
         <button class="phase done" data-phase="1"><span class="phase-no">1 · 完了</span><span class="phase-name">棚卸し・保存</span><span class="phase-time">9月6日完了</span></button>
-        <button class="phase" data-phase="2"><span class="phase-no">2 · 一部残り</span><span class="phase-name">GitHub補完</span><span class="phase-time">並行して継続</span></button>
+        <button class="phase done" data-phase="2"><span class="phase-no">2 · 完了</span><span class="phase-name">GitHub補完</span><span class="phase-time">9月〜10月完了</span></button>
         <button class="phase done" data-phase="3"><span class="phase-no">3 · 完了</span><span class="phase-name">テスト公開</span><span class="phase-time">10月6日まで</span></button>
         <button class="phase done" data-phase="4"><span class="phase-no">4 · 完了</span><span class="phase-name">切替準備</span><span class="phase-time">10月6日完了</span></button>
-        <button class="phase current" data-phase="5"><span class="phase-no">5 · 今ここ</span><span class="phase-name">切替・監視</span><span class="phase-time">〜11月5日ごろ</span></button>
-        <button class="phase" data-phase="6"><span class="phase-no">6</span><span class="phase-name">ConoHa終了</span><span class="phase-time">期限1か月前</span></button>
+        <button class="phase done" data-phase="5"><span class="phase-no">5 · 完了</span><span class="phase-name">無料化・組織移設</span><span class="phase-time">11月5日監視完了</span></button>
+        <button class="phase done current" data-phase="6"><span class="phase-no">6 · 完了</span><span class="phase-name">ConoHa自動更新OFF</span><span class="phase-time">満了日で自然終了</span></button>
       </div>
       <div class="card phase-detail" aria-live="polite">
-        <div><span class="now-label" id="detailStatus">今ここ</span><h3 id="detailTitle">切替・30日監視</h3><p id="detailPurpose">sauna-cospa.comをGitHub版へ切り替えました。30日間、安定しているかを確認します。</p></div>
-        <ul id="detailTasks"><li>✓ DNSを切替（10月6日）</li><li>✓ 証明書の発行とHTTPS強制を確認</li><li>✓ 主要ページ・日本語URL・404を確認</li><li>✓ メール設定（MX・SPF・DKIM）が変わっていないことを確認</li><li>404とアクセス解析を監視（〜11月5日ごろ）</li><li>修正はGitHubだけで実施</li></ul>
+        <div><span class="now-label" id="detailStatus">完了（自然満了待ち）</span><h3 id="detailTitle">ConoHa自動更新OFF・完全無料化</h3><p id="detailPurpose">ConoHa WINGの自動更新をOFFにし、維持費ゼロのGitHub無料アドレス（gomirachelin.github.io/sauna-cospa/）へ完全移行しました。</p></div>
+        <ul id="detailTasks"><li>✓ ConoHa WINGの自動更新をOFF（契約満了日 2027年7月1日で自然終了）</li><li>✓ 独自ドメイン sauna-cospa.com を外し無料アドレスへ移行（10月22日）</li><li>✓ ドメイン期限（2027年6月14日）まで新URLへ自動転送を設定</li><li>✓ 組織 gomirachelin/sauna-cospa へ移設（11月2日）</li><li>✓ Web主要データとWordPress DBをローカル保存済み</li></ul>
       </div>
     </section>
 
     <section>
-      <div class="section-head"><div><h2>半年の目安</h2><p class="hint">問題が見つかったら無理に次へ進めません</p></div></div>
+      <div class="section-head"><div><h2>半年の目安</h2><p class="hint">移行作業は予定より前倒しで完了し、通常運用に入っています</p></div></div>
       <div class="month-road">
-        <div class="month active"><b>1か月目</b><span>棚卸し・全バックアップ</span></div>
-        <div class="month"><b>2か月目</b><span>不足補完・フォルダー整理</span></div>
-        <div class="month"><b>3か月目</b><span>テスト公開・表示修正</span></div>
-        <div class="month"><b>4か月目</b><span>ドメイン準備・切替</span></div>
-        <div class="month"><b>5か月目</b><span>30日監視・改善</span></div>
-        <div class="month"><b>6か月目</b><span>最終確認・ConoHa終了</span></div>
+        <div class="month"><b>1か月目（完了）</b><span>棚卸し・全バックアップ</span></div>
+        <div class="month"><b>2か月目（完了）</b><span>不足補完・データ正本化</span></div>
+        <div class="month"><b>3か月目（完了）</b><span>テスト公開・表示修正</span></div>
+        <div class="month"><b>4か月目（完了）</b><span>本番切替・無料アドレス化</span></div>
+        <div class="month"><b>5か月目（完了）</b><span>組織移設・30日監視完了</span></div>
+        <div class="month active"><b>現在（通常運用）</b><span>記事追加・座標補完・改善</span></div>
       </div>
     </section>
 
     <section>
-      <div class="section-head"><div><h2>サイト改善ToDo</h2><p class="hint">移行以外に、あとで進める予定の作業</p></div><div class="filters" aria-label="ToDo絞り込み"><button class="filter" data-filter="all" aria-pressed="true">すべて</button><button class="filter" data-filter="now" aria-pressed="false">移行と同時</button><button class="filter" data-filter="later" aria-pressed="false">公開前</button><button class="filter" data-filter="ongoing" aria-pressed="false">移行後</button></div></div>
+      <div class="section-head"><div><h2>サイト改善ToDo</h2><p class="hint">移行後に進めるデータ整備・改善作業</p></div><div class="filters" aria-label="ToDo絞り込み"><button class="filter" data-filter="all" aria-pressed="true">すべて</button><button class="filter" data-filter="now" aria-pressed="false">データ整合・保存</button><button class="filter" data-filter="later" aria-pressed="false">表示・導線整理</button><button class="filter" data-filter="ongoing" aria-pressed="false">継続運用</button></div></div>
       <div class="lanes">
-        <article class="card lane now-lane" data-group="now"><h3>優先A：移行と同時</h3><p class="lane-sub">公開の問題とデータの土台を整える</p><div class="task done"><span class="dot"></span><p>✓ Amazon必須表記・レビューのAmazon枠を追加</p></div><div class="task"><span class="dot"></span><p>✓ sauna-cospa.comをGitHub版へ切替（10/6）</p></div><div class="task done"><span class="dot"></span><p>✓ ログイン不要の静的地図を追加</p></div><div class="task done"><span class="dot"></span><p>✓ 重複投稿を旧URL履歴へ分離</p></div><div class="task"><span class="dot"></span><p>施設数・閉店扱いを統一</p></div><div class="task done"><span class="dot"></span><p>✓ 10評価項目⑤・⑦・⑧の定義を統一</p></div><div class="task"><span class="dot"></span><p>タイパ0.0の施設を確認</p></div><div class="task"><span class="dot"></span><p>地図の座標未登録施設を補完</p></div><div class="task done"><span class="dot"></span><p>✓ GAS v91ソースを安全にローカル準備</p></div><div class="task"><span class="dot"></span><p>GASソースのGitHub公開承認</p></div><div class="task done"><span class="dot"></span><p>✓ Sheets地図用データの部分保存を確認</p></div><div class="task"><span class="dot"></span><p>Sheets全体を非公開バックアップ</p></div></article>
-        <article class="card lane later" data-group="later"><h3>優先B：テスト公開前</h3><p class="lane-sub">表示と更新作業を整える</p><div class="task done"><span class="dot"></span><p>✓ 404・.nojekyll・robots.txtを追加</p></div><div class="task done"><span class="dot"></span><p>✓ CNAMEを追加（DNSの記録と戻し方を保存後）</p></div><div class="task done"><span class="dot"></span><p>✓ ランキングをデータ1か所から更新</p></div><div class="task"><span class="dot"></span><p>レビュー一覧を共通メニューへ追加</p></div><div class="task done"><span class="dot"></span><p>✓ トップのWordPress固有URLを静的URLへ変更</p></div><div class="task done"><span class="dot"></span><p>✓ サウナ大学画像35枚をGitHubへ移行</p></div><div class="task"><span class="dot"></span><p>サウナ大学の重複ページを整理</p></div></article>
-        <article class="card lane ongoing" data-group="ongoing"><h3>優先C：移行後も継続</h3><p class="lane-sub">更新しやすさと品質を保つ</p><div class="task"><span class="dot"></span><p>レビュー追加と一覧生成を簡単にする</p></div><div class="task"><span class="dot"></span><p>新規施設を同じデータから各画面へ反映</p></div><div class="task"><span class="dot"></span><p>PC・スマホ表示と404を定期確認</p></div><div class="task"><span class="dot"></span><p>アクセス解析とSEOを確認</p></div><div class="task"><span class="dot"></span><p>問い合わせ・広告リンクを確認</p></div></article>
+        <article class="card lane now-lane" data-group="now"><h3>優先A：データ整合・保存</h3><p class="lane-sub">正本データと各ページを一致させる</p><div class="task"><span class="dot"></span><p><strong>さふぃスパ沖縄を正本・一覧・10項目別・地図へ反映し、ランキング生成スクリプトを新URL対応にする</strong></p></div><div class="task"><span class="dot"></span><p>地図の座標未登録施設（残り65件）を補完</p></div><div class="task"><span class="dot"></span><p>施設数・閉店扱いを統一</p></div><div class="task"><span class="dot"></span><p>タイパ0.0の施設を確認</p></div><div class="task"><span class="dot"></span><p>Sheets全体を非公開バックアップ</p></div><div class="task"><span class="dot"></span><p>GASソースのGitHub公開承認</p></div><div class="task done"><span class="dot"></span><p>✓ 10評価項目⑤・⑦・⑧の定義を統一</p></div><div class="task done"><span class="dot"></span><p>✓ 重複投稿を旧URL履歴へ分離</p></div></article>
+        <article class="card lane later" data-group="later"><h3>優先B：表示・導線整理</h3><p class="lane-sub">読みやすさとページ整理</p><div class="task"><span class="dot"></span><p>未作成のレビュー本文2本（ふくの湯・オリエンタル3）を追加</p></div><div class="task"><span class="dot"></span><p>神戸サウナの重複リンク枠2組を1組に整理</p></div><div class="task"><span class="dot"></span><p>レビュー一覧を共通メニューへ追加するか検討</p></div><div class="task"><span class="dot"></span><p>サウナ大学の重複ページを整理</p></div><div class="task"><span class="dot"></span><p>スマホ確認後、一時ページ kekkon-check/ を削除</p></div><div class="task done"><span class="dot"></span><p>✓ 組織 gomirachelin の新URLへ全ページ統一</p></div><div class="task done"><span class="dot"></span><p>✓ ランキングをデータ1か所から更新</p></div></article>
+        <article class="card lane ongoing" data-group="ongoing"><h3>優先C：継続運用</h3><p class="lane-sub">更新しやすさと品質を保つ</p><div class="task"><span class="dot"></span><p>新規レビュー記事の追加と一覧生成</p></div><div class="task"><span class="dot"></span><p>新規施設を同じデータから各画面へ反映</p></div><div class="task"><span class="dot"></span><p>PC・スマホ表示と404を定期確認</p></div><div class="task"><span class="dot"></span><p>アクセス解析・問い合わせ・広告リンクを確認</p></div><div class="task"><span class="dot"></span><p>Amazonアソシエイト登録サイトURLの確認</p></div></article>
       </div>
     </section>
 
     <section>
-      <div class="section-head"><div><h2>完了したこと</h2><p class="hint">2026年10月6日時点</p></div></div>
-      <div class="done-list"><div class="done-item">✓ GAS地図 v91を公開</div><div class="done-item">✓ 県境・施設数・ピンを統合</div><div class="done-item">✓ FILTER欄を削除</div><div class="done-item">✓ ログイン不要の静的地図を追加</div><div class="done-item">✓ 全60ページを静的地図へ接続</div><div class="done-item">✓ PagesをルートURLで正常公開</div><div class="done-item">✓ 1,434か所のパス問題を解消</div><div class="done-item">✓ AI共通ルールをAGENTS.mdへ一元化</div><div class="done-item">✓ STATEと引き継ぎを整備</div><div class="done-item">✓ Web 8,450ファイルを保存・検証</div><div class="done-item">✓ WordPress DB 18テーブルをSQL保存</div><div class="done-item">✓ PR #3でリンク切れ2件を解消</div><div class="done-item">✓ Pages基本ファイルを追加</div><div class="done-item">✓ トップのWHYリンクを静的URLへ修正</div><div class="done-item">✓ サウナ大学画像35枚をGitHubへ移行</div><div class="done-item">✓ Amazon必須表記・Amazon枠を追加</div><div class="done-item">✓ sauna-cospa.comをGitHub Pagesへ切替</div><div class="done-item">✓ HTTPS強制をオン</div></div>
+      <div class="section-head"><div><h2>完了したこと</h2><p class="hint">2026年11月6日時点</p></div></div>
+      <div class="done-list"><div class="done-item">✓ GAS地図 v91を公開</div><div class="done-item">✓ ログイン不要の静的地図を追加</div><div class="done-item">✓ 全ページを静的地図へ接続</div><div class="done-item">✓ 地図ピン109施設を登録</div><div class="done-item">✓ ランキングをrankings.jsonへ一本化</div><div class="done-item">✓ 10項目評価基準を明文化</div><div class="done-item">✓ Web 8,450ファイルを保存・検証</div><div class="done-item">✓ WordPress DB 18テーブルをSQL保存</div><div class="done-item">✓ サウナ大学画像35枚をGitHubへ移行</div><div class="done-item">✓ サウナ大学「次のレッスンへ」追加</div><div class="done-item">✓ 空レビュー10本に本文を追加</div><div class="done-item">✓ Amazon必須表記・Amazon枠を追加</div><div class="done-item">✓ ConoHa WING自動更新をOFF</div><div class="done-item">✓ 独自ドメインを外し維持費ゼロ化</div><div class="done-item">✓ さふぃスパ沖縄の記事を公開</div><div class="done-item">✓ 組織 gomirachelin/sauna-cospa へ移設</div><div class="done-item">✓ 旧URLから新URLへの自動転送を設定</div><div class="done-item">✓ 切替後の30日監視を完了</div></div>
     </section>
 
-    <section class="gate" aria-label="進めない条件"><div><strong>バックアップなし</strong><br>削除・移動・DNS変更をしない</div><div><strong>メール管理先が不明</strong><br>DNSを変更しない</div><div><strong>重大な404や表示崩れ</strong><br>独自ドメインを切り替えない</div></section>
-    <footer>最終更新：2026-10-08 ｜ 詳細と判断理由は「GitHub移行ロードマップ.md」と「STATE.md」に記録</footer>
+    <section class="gate" aria-label="進めない条件"><div><strong>バックアップなし</strong><br>削除・移動をしない</div><div><strong>CNAMEの無断追加禁止</strong><br>他サイトへの影響や費用発生を防ぐ</div><div><strong>重大な404や表示崩れ</strong><br>確認できるまで公開反映しない</div></section>
+    <footer>最終更新：2026-11-06 ｜ 詳細と判断理由は「GitHub移行ロードマップ.md」と「STATE.md」に記録</footer>
   </main>
 
   <script>
     const phaseData = {
-      0: ["完了", "準備", "GitHubを作業の正本として使える状態にしました。", ["GAS地図 v91を公開", "地図をGitHubメニューへ追加", "AI共通ルールをAGENTS.mdへ一元化"]],
-      1: ["完了", "棚卸し・バックアップ", "Web主要データとDB SQLを保存・検証しました。完全スナップショットとの差10項目も記録済みです。", ["自動バックアップ状況を確認済み", "Web 8,450ファイルを解凍・検証済み", "WordPressデータベース18テーブルをSQL保存", "DNS・メール・契約を記録", "公開差分を作成"]],
-      2: ["一部残り", "GitHub補完・整理", "公開差分を整理し、GitHub Pagesテストに必要なものだけをそろえます。", ["✓ 差分を追加・URL変更・保留へ分類", "✓ Pages基本ファイルとWHYリンクを反映", "✓ サウナ大学画像35枚とHTML参照をGitHubへ移行", "✓ ログイン不要の静的地図を追加", "✓ 全60ページを静的地図へ接続", "✓ PagesをルートURLで正常公開", "✓ GASソースを安全にローカル準備", "GASソースのGitHub公開承認", "主要ページをPC・スマホで確認"]],
-      3: ["完了", "テスト公開", "本番と同じ操作を一時URLで確認しました。", ["✓ 公開方法を決定", "✓ ルートURLでトップとCSSを確認", "✓ 未ログインで地図を開けることを確認", "✓ 390px幅で主要5ページ・MENUを確認", "✓ スマホMENU修正を公開URLで再確認", "✓ 404・問い合わせを確認", "✓ 内部参照1,495件の不足0"]],
-      4: ["完了", "ドメイン切替準備", "メールを守りながら公開先を変更できる手順を作りました。", ["✓ DNS値を保存", "✓ 独自ドメインを検証（GitHubのDNSチェック成功）", "✓ Web用設定だけを変える計画", "✓ ConoHaへ戻す手順を記録"]],
-      5: ["今ここ", "切替・30日監視", "sauna-cospa.comをGitHub版へ切り替えました。30日間、安定しているかを確認します。", ["✓ DNSを切替（10月6日）", "✓ 証明書の発行とHTTPS強制を確認", "✓ 主要ページ・日本語URL・404を確認", "✓ メール設定（MX・SPF・DKIM）が変わっていないことを確認", "404とアクセス解析を監視（〜11月5日ごろ）", "修正はGitHubだけで実施"]],
-      6: ["予定", "ConoHa終了", "WINGパックの自動更新をOFFにして、契約満了日（2027年7月1日）で終わらせます。ConoHaのアカウントとドメインは残します。", ["WINGパックの自動更新をOFF（2027年6月1日より前）", "ドメインの自動更新はONのまま", "DNSの置き場所（今はConoHa）とメールの扱いを決める", "依存0件を再確認", "最終バックアップを2か所に保存", "ドメインとメールへの影響を確認", "解約日をSTATE.mdへ記録"]]
+      0: ["完了", "準備", "GitHubを作業の正本として使える状態にしました。", ["✓ GAS地図 v91を公開", "✓ 地図をGitHubメニューへ追加", "✓ AI共通ルールをAGENTS.mdへ一元化"]],
+      1: ["完了", "棚卸し・バックアップ", "Web主要データとDB SQLを保存・検証しました。完全スナップショットとの差10項目も記録済みです。", ["✓ 自動バックアップ状況を確認済み", "✓ Web 8,450ファイルを解凍・検証済み", "✓ WordPressデータベース18テーブルをSQL保存", "✓ DNS・メール・契約を記録", "✓ 公開差分を作成"]],
+      2: ["完了", "GitHub補完・整理", "公開差分を整理し、ランキングや地図のデータ正本化まで完了しました。", ["✓ Pages基本ファイルとWHYリンクを反映", "✓ サウナ大学画像35枚とHTML参照をGitHubへ移行", "✓ ログイン不要の静的地図を追加（109施設ピン登録）", "✓ ランキングを data/rankings.json に一本化", "✓ 重複URLを data/url-history.json に分離", "✓ GASソースを安全にローカル準備"]],
+      3: ["完了", "テスト公開", "PC・スマートフォンの両方で表示とリンクを確認しました。", ["✓ 公開方法を決定", "✓ トップ・CSS・メニューを確認", "✓ 未ログインで地図を開けることを確認", "✓ 390px幅で主要ページ・MENU開閉を確認", "✓ 404・問い合わせを確認", "✓ 内部参照のリンク切れ0を確認"]],
+      4: ["完了", "ドメイン切替準備", "DNS値と戻し方を記録し、安全に公開先を切り替えられる状態にしました。", ["✓ DNS値を保存", "✓ GitHub Pagesの設定と証明書を確認", "✓ 戻し方を「dns-mail-公開記録.md」に記録"]],
+      5: ["完了", "無料アドレス化・組織移設・30日監視", "維持費ゼロのGitHub無料アドレスへ移行し、組織 gomirachelin へ移設しました。", ["✓ GitHub Pagesへ切替（10月6日）", "✓ 独立リポジトリ sauna-cospa へ分離（10月8日）", "✓ 独自ドメインを外し無料アドレスへ移行（10月22日）", "✓ 組織 gomirachelin/sauna-cospa へ移設（11月2日）", "✓ 旧URL（sauna-cospa.com / kenji0618y）からの転送を設定", "✓ 30日監視を完了（〜11月5日）"]],
+      6: ["完了（自然満了待ち）", "ConoHa自動更新OFF・完全無料化", "ConoHa WINGの自動更新をOFFにし、維持費ゼロのGitHub無料アドレス（gomirachelin.github.io/sauna-cospa/）へ完全移行しました。", ["✓ ConoHa WINGの自動更新をOFF（契約満了日 2027年7月1日で自然終了）", "✓ 独自ドメイン sauna-cospa.com を外し無料アドレスへ移行（10月22日）", "✓ ドメイン期限（2027年6月14日）まで新URLへ自動転送を設定", "✓ 組織 gomirachelin/sauna-cospa へ移設（11月2日）", "✓ Web主要データとWordPress DBをローカル保存済み"]]
     };
     document.querySelectorAll(".phase").forEach(button => button.addEventListener("click", () => {
       document.querySelectorAll(".phase").forEach(item => item.classList.remove("current"));

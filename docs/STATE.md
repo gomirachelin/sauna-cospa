@@ -1,3 +1,24 @@
+# サイトの現在の状態（STATE.md）
+
+このファイルは、サイトの現在の状況やできていること、次にやることを記録するためのドキュメントです。
+
+最終更新：2026-11-06（ロードマップ・手順書・README・AGENTS.md を組織移設・無料アドレス化後の最新状態に更新）
+
+## ロードマップ・手順書の最新化（2026-11-06）
+
+- 利用者の選択により、10月22日の独自ドメイン廃止（GitHub無料アドレス化・ConoHa自動更新OFF）と11月2日の組織 `gomirachelin` 移設に合わせて、ロードマップと手順書を最新の内容へ更新した。
+- 判断と理由：サイトの公開先が `https://gomirachelin.github.io/sauna-cospa/` に変わり、ConoHa自動更新OFFと切替後30日監視（〜11月5日）も完了したため、計画表と手順書を実態と一致させて今後の迷いを防ぐため。
+- 変更ファイル：
+  - `docs/GitHub移行ロードマップ.md`・`docs/roadmap.html`：フェーズ0〜6を完了（ConoHaは契約満了日までの自然終了待ち）とし、現在地を「通常運用とサイト改善」へ更新。MarkdownとHTMLの内容を一致させた。
+  - `docs/新規レビュー記事の追加手順.md`：旧ConoHaアップロードやHTML直接編集の説明を廃止し、現在の正本データ（`data/rankings.json`・`scripts/build_rankings.py`・`scripts/gen_reviews.py`）と新URL（`https://gomirachelin.github.io/sauna-cospa/`）を使った手順に更新。
+  - `README.md`・`AGENTS.md`：現在の公開URL（`https://gomirachelin.github.io/sauna-cospa/`）と転送専用リポジトリの役割、CNAME追加禁止の注意を最新化。
+  - `docs/STATE.md`・`docs/AI引き継ぎ.md`：今回の更新内容と次の作業を記録。
+- 確認結果：公開ページのHTML・CSS・データは変更しておらず、既存のURL検査（`check_url_data.py`）と地図データ検査（`build_map_data.py --check`）は合格。なお、`build_rankings.py --check` は10月28日に追加された「さふぃスパ沖縄」が `ランキング/index.html` にのみ直接追加され `data/rankings.json`・`10項目別ランキング/index.html`・`reviews/index.html` に未反映であること、および `build_rankings.py` のリンク先が `/sauna-cospa/` 未対応であることを検出したため、次の作業の最優先として記録した。
+- 公開状況：GitHub（`gomirachelin/sauna-cospa`）の `main` ブランチへ反映済み。
+- 残作業（次の候補）：
+  1. 「さふぃスパ沖縄」を `data/rankings.json`・`data/map-facilities.json` に反映し、`scripts/build_rankings.py` を `/sauna-cospa/` パスに対応させて `10項目別ランキング/index.html`・`reviews/index.html`・`map/index.html` を再生成する。
+  2. 地図の座標未登録65施設を少しずつ補完する（現在109/174件登録済み）。
+  3. 本文未作成のレビュー記事2本（ふくの湯・オリエンタル3）の追加、神戸サウナの重複リンク枠整理、タイパ0.0施設の確認。
 
 ## 組織 gomirachelin へ移設（2026-11-02・Grok Bot）
 - 公開リポジトリを個人 `kenji0618y` から組織 `gomirachelin` へ transfer。Pages URL は `https://gomirachelin.github.io/sauna-cospa/`。
@@ -5,14 +26,12 @@
 - `sauna-cospa-com-redirect` の転送先も新URLへ更新。CNAME は足していない。
 - サイト内の絶対URL（sitemap・urls.json・記事canonical等）を組織URLへ一括置換。
 
-# サイトの現在の状態（STATE.md）
+## ⚠️ 重要：kenji0618y.github.io 等に CNAME を足さないこと（2026-10-08〜11-02）
 
-## ⚠️ 重要：kenji0618y.github.io に CNAME を足さないこと（2026-10-08）
-
-- **Do NOT add a CNAME to kenji0618y.github.io: it moves every project site (kekkon-roadmap, henshu-lock) to that domain. sauna-cospa.com lives in gomirachelin/sauna-cospa.**
+- **Do NOT add a CNAME to kenji0618y.github.io or gomirachelin/sauna-cospa. The public site is hosted at https://gomirachelin.github.io/sauna-cospa/ (repo: gomirachelin/sauna-cospa).**
 - 2026-10-06 にここへ `CNAME`（sauna-cospa.com）を足したところ、GitHubの仕様で同じアカウントのプロジェクトサイト（kekkon-roadmap・henshu-lock）まで `sauna-cospa.com/〜` へ転送され、結婚ロードマップの端末データとLINE通知が見えなくなった（公式：https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages ）。
-- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を **https://github.com/gomirachelin/sauna-cospa** へ履歴ごと移し、独自ドメイン `sauna-cospa.com` はそちらに付け替えた。サイトの正本・作業記録の続きは sauna-cospa リポジトリ。
-- 旧リポジトリ kenji0618y.github.io には、`sauna-cospa.com` へ転送するだけの `index.html`・`404.html`（外部スクリプトなし）と、2026-10-08 までの作業記録（docs/）だけを残している。ここにサイトのページや外部スクリプト（GTM・解析など）を戻さないこと。
+- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を **https://github.com/gomirachelin/sauna-cospa** へ履歴ごと移し、2026-10-22 に独自ドメインを外して無料アドレス化し、2026-11-02 に組織 `gomirachelin` へ移設した。サイトの正本・作業記録の続きは `gomirachelin/sauna-cospa` リポジトリ。
+- 旧リポジトリ kenji0618y.github.io には、転送用の `index.html`・`404.html`（外部スクリプトなし）と、2026-10-08 までの作業記録（docs/）だけを残している。ここにサイトのページや外部スクリプト（GTM・解析など）を戻さないこと。
 - DNS（ConoHa）は変更していない。www の CNAME `kenji0618y.github.io` はGitHubの推奨どおりで、プロジェクトリポジトリの独自ドメインでもこのままでよい。
 
 ## サイトを gomirachelin/sauna-cospa へ移動（2026-10-08・Grok Bot）
@@ -35,10 +54,6 @@
 - 結婚ロードマップの残りデータ：利用者の許可（「見比べて必要なら直してもよい」）を得て、PCのChromeの sauna-cospa.com 側を確認（`robots.txt` 上で読み取りのみ・中身は読まない）。手帳の記録（`futari-miraicho-v1`）と同期設定は**無し**。残っていたのは「自分の名前」の設定1件と合言葉の鍵（IndexedDB `site-lock`）だけ＝取り出すものは無い。
 - スマホ用に、開くだけで同じ確認ができる一時ページ `kekkon-check/index.html`（https://sauna-cospa.com/kekkon-check/）を追加。端末の中だけで調べ、外部スクリプト・解析タグなし、`noindex`、サイトマップ・メニューには載せない。手帳の記録が残っていれば消さずに知らせるよう表示し、残っていなければ「ここに残った分を消す」ボタン（結婚ロードマップの鍵・設定・一時保存だけを消す。サウナ大学の `saunadaigaku_v1`・`sauna_apikey` は消さない）を出す。3パターン（何もなし／鍵と設定だけ／手帳あり）をヘッドレスブラウザで確認済み。
 - 判断と理由：合言葉の鍵が解析タグ（GA）の載ったサウナのサイト側に残るのは好ましくないため、利用者が自分で押せる削除ボタンを用意した（Claudeは利用者の端末のデータを消していない）。二人のスマホで確認が済んだら `kekkon-check/` を削除する。
-
-このファイルは、サイトの現在の状況やできていること、次にやることを記録するためのドキュメントです。
-
-最終更新：2026-10-08（Claude：移動後の点検・サイトマップ整理・結婚ロードマップの残り確認ページ・ConoHa解約の方針）
 
 ## 独自ドメイン sauna-cospa.com をGitHub Pagesへ切替（2026-10-06・Claude）※完了・30日監視中
 

@@ -1,12 +1,12 @@
 # AGENTS.md
 
-## ⚠️ 重要：kenji0618y.github.io に CNAME を足さないこと（2026-10-08）
+## ⚠️ 重要：現在の公開先と CNAME に関する注意（2026-10-08〜11-02更新）
 
-- **Do NOT add a CNAME to kenji0618y.github.io: it moves every project site (kekkon-roadmap, henshu-lock) to that domain. sauna-cospa.com lives in gomirachelin/sauna-cospa.**
-- 2026-10-06 にここへ `CNAME`（sauna-cospa.com）を足したところ、GitHubの仕様で同じアカウントのプロジェクトサイト（kekkon-roadmap・henshu-lock）まで `sauna-cospa.com/〜` へ転送され、結婚ロードマップの端末データとLINE通知が見えなくなった（公式：https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages ）。
-- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を **https://github.com/gomirachelin/sauna-cospa** へ履歴ごと移し、独自ドメイン `sauna-cospa.com` はそちらに付け替えた。サイトの正本・作業記録の続きは sauna-cospa リポジトリ。
-- 旧リポジトリ kenji0618y.github.io には、`sauna-cospa.com` へ転送するだけの `index.html`・`404.html`（外部スクリプトなし）と、2026-10-08 までの作業記録（docs/）だけを残している。ここにサイトのページや外部スクリプト（GTM・解析など）を戻さないこと。
-- DNS（ConoHa）は変更していない。www の CNAME `kenji0618y.github.io` はGitHubの推奨どおりで、プロジェクトリポジトリの独自ドメインでもこのままでよい。
+- **Do NOT add a CNAME to kenji0618y.github.io or gomirachelin/sauna-cospa. The public site is hosted at https://gomirachelin.github.io/sauna-cospa/ (repo: gomirachelin/sauna-cospa).**
+- 2026-10-06 に `kenji0618y.github.io` へ `CNAME`（sauna-cospa.com）を足したところ、GitHubの仕様で同じアカウントのプロジェクトサイト（kekkon-roadmap・henshu-lock）まで `sauna-cospa.com/〜` へ転送され、結婚ロードマップの端末データとLINE通知が見えなくなった（公式：https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages ）。
+- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を別リポジトリへ分離し、2026-10-22 に月額・年額費用ゼロで運用するため独自ドメイン `sauna-cospa.com` を外して GitHub Pages の無料アドレスへ切り替えた（ConoHa WING 自動更新OFF済み）。
+- 2026-11-02 に公開リポジトリを個人 `kenji0618y` から組織 `gomirachelin`（**https://github.com/gomirachelin/sauna-cospa**）へ移設した。現在の正式な公開URLは **https://gomirachelin.github.io/sauna-cospa/**（サイト内の内部パスは `/sauna-cospa/〜`）。
+- 旧URLからの転送は専用リポジトリで維持している（`kenji0618y/sauna-cospa`・`kenji0618y/sauna-cospa-com-redirect`・`kenji0618y/kenji0618y.github.io`）。これら転送用リポジトリにサイト本体や外部スクリプト（GTM・解析など）を戻さないこと。
 
 このファイルは、このリポジトリで作業するAIエージェントへの指示書です。
 

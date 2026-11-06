@@ -1,6 +1,18 @@
 # AI引き継ぎ
 
-最終更新：2026-10-06
+最終更新：2026-11-06
+
+## 2026-11-06 組織移設・無料アドレス化に伴うロードマップと手順書の更新
+
+- **現在の公開先**：`https://gomirachelin.github.io/sauna-cospa/`（リポジトリ：`gomirachelin/sauna-cospa`）。
+- **経緯のまとめ**：
+  - 2026-10-08：`kenji0618y.github.io` から独立リポジトリ `sauna-cospa` へ分離。
+  - 2026-10-22：月額・年額費用ゼロにするため独自ドメイン `sauna-cospa.com` を外し、GitHub無料アドレスへ移行（内部パスは `/sauna-cospa/〜`）。ConoHa WINGの自動更新もOFF済み（契約満了日 2027-07-01、ドメイン期限 2027-06-14 で自然終了）。
+  - 2026-10-28：「さふぃスパ沖縄」のレビュー記事を追加（`2fe4d4b`）。
+  - 2026-11-02：公開リポジトリを個人 `kenji0618y` から組織 `gomirachelin` へ移設（`854f5f0`）。旧 `kenji0618y/sauna-cospa` と `sauna-cospa-com-redirect` は新URLへの転送専用。
+  - 2026-11-06：`docs/GitHub移行ロードマップ.md`、`docs/roadmap.html`、`docs/新規レビュー記事の追加手順.md`、`README.md`、`AGENTS.md` を現在の運用に合わせて更新。
+- **次の1手（最優先）**：
+  - 10月28日に追加された「さふぃスパ沖縄」は `さふぃスパ沖縄/index.html`・`ランキング/index.html`・`data/urls.json`・`sitemap.xml` にのみ入っており、`data/rankings.json`（正本）・`10項目別ランキング/index.html`・`reviews/index.html`・`data/map-facilities.json` が未更新。また `scripts/build_rankings.py` のリンク出力が `/sauna-cospa/{slug}/` ではなく旧 `/{slug}/` のままになっているため、これを修正して再生成・同期させる。
 
 ## 2026-10-06 Claude 独自ドメインをGitHub Pagesへ切替
 

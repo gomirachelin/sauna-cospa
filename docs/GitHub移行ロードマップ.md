@@ -1,28 +1,28 @@
 # GOMIRACHELIN 全体ロードマップ
 
-最終更新：2026-10-08
+最終更新：2026-11-06
 
 ## 目的
 
-ConoHaからGitHub中心の運用へ安全に移行しながら、地図・ランキング・記事・データ管理など、後で改善する予定の作業も一つの計画で確認できるようにする。
+ConoHaからGitHub中心の無料運用（`https://gomirachelin.github.io/sauna-cospa/`）への移行状況と、地図・ランキング・記事・データ管理などの改善作業を一つの計画で確認できるようにする。
 
 ## 基本方針
 
-- 新しいページ・修正・作業記録はGitHubだけに保存する。
-- 現在のConoHaサイトは更新せず、移行完了まで旧サイトとして稼働させる。
-- 公開メニューはGitHubの静的地図を使い、GAS地図v91は移行確認中の予備として残す。Google Sheetsは当面継続する。
-- ConoHaを解約する前に、ファイルとWordPressデータベースの最終バックアップを保存する。
-- GitHub PagesのテストURLで確認が終わるまで、独自ドメインの向き先を変更しない。
+- 新しいページ・修正・作業記録はGitHub（`gomirachelin/sauna-cospa`）だけに保存する。
+- 月額・年額費用をゼロにするため、独自ドメイン `sauna-cospa.com` や有料レンタルサーバー（ConoHa WING）は使わず、GitHub Pages の無料アドレス `https://gomirachelin.github.io/sauna-cospa/` で公開する。
+- 旧URL（`sauna-cospa.com`・`kenji0618y.github.io/sauna-cospa/`）は転送専用リポジトリで新URLへ自動転送する（ドメイン期限 2027-06-14 まで）。
+- 公開メニューはGitHubの静的地図を使い、GAS地図v91は予備として残す。Google Sheetsは当面継続する。
 
 ## 一目で見る現在地
 
-- **完了**：地図バージョン91、ログイン不要のGitHub静的地図、AI共通ルール、ロードマップ作成、Pages基本ファイル、サウナ大学画像35枚のGitHub移行、ConoHaのWeb・DBバックアップ、全60ページの静的地図メニュー統一。
-- **今ここ**：フェーズ5「`sauna-cospa.com` を切替・監視」。**2026-10-06に独自ドメインをGitHub Pagesへ切替済み**（HTTPS強制オン）。2026-11-05ごろまで30日監視する。フェーズ2の残り（GASソースの公開承認など）は並行して進める。
-- **公開前のブロッカー**：ルート絶対パス1,434か所の問題は、リポジトリを `kenji0618y.github.io` へ変更して解消済み。
-- **期限つき（2026-10-03追加・10-06更新）**：Amazonアソシエイトは、2026-12-31ごろまでに3件売れると本審査が始まり、`sauna-cospa.com` が見られる。**2026-10-06の切替で、`sauna-cospa.com` はGitHub版（必須表記・Amazon枠あり、`/reviews/` 正常）になった。** ConoHa解約（フェーズ6）はAmazon審査の完了と30日監視の後。ConoHa WINGの契約満了日は2027-07-01（管理画面で確認）。
-- **次の3件**：地図の座標未登録65施設の段階補完、Google Sheets全体の非公開バックアップ、タイパ0.0施設の確認。
-- **移行と並行して進めること**：施設データの不整合確認、地図の座標補完、ランキング更新の簡略化。
-- **移行後に継続すること**：レビュー追加、スマートフォン表示、アクセス解析、SEO、問い合わせと広告リンクの点検。
+- **完了**：地図バージョン91、ログイン不要のGitHub静的地図、AI共通ルール、ロードマップ作成、Pages基本ファイル、サウナ大学画像35枚のGitHub移行、ConoHaのWeb・DBバックアップ、全ページの静的地図メニュー統一、Amazon必須表記とAmazon枠の追加、ConoHa WING自動更新OFF、GitHub無料アドレス化（2026-10-22）、組織 `gomirachelin/sauna-cospa` への移設（2026-11-02）、切替後30日監視の完了（〜2026-11-05）。
+- **今ここ**：**移行完了・通常運用とサイト改善**。サイトは `https://gomirachelin.github.io/sauna-cospa/` で安定稼働中。ConoHa WING（契約満了日 2027-07-01）とドメイン `sauna-cospa.com`（期限 2027-06-14）は自動更新OFFで自然終了待ち。
+- **期限つき（Amazonアソシエイト）**：2026-12-31ごろまでに3件売れると本審査が始まる。登録サイトのURLが現在の公開URL（`https://gomirachelin.github.io/sauna-cospa/`）になっているかAmazon管理画面で確認しておく。
+- **次の3件**：
+  1. 2026-10-28に追加した「さふぃスパ沖縄」を正本データ（`data/rankings.json`）・10項目別ランキング・レビュー一覧・地図へ反映し、`scripts/build_rankings.py` を `/sauna-cospa/` パスに対応する。
+  2. 地図の座標未登録65施設の段階補完（現在109/174施設完了）。
+  3. Google Sheets全体の非公開バックアップ、タイパ0.0施設の確認、未作成レビュー本文（ふくの湯・オリエンタル3）の追加。
+- **継続して進めること**：新規レビュー追加、スマートフォン表示・リンク切れ・アクセス解析の点検。
 
 HTMLの見える化版：`docs/roadmap.html`
 
@@ -101,64 +101,58 @@ HTMLの見える化版：`docs/roadmap.html`
 
 **【完了・2026-10-06】** DNS値（公開DNS＋ConoHa管理画面の全レコード）と戻し方を `docs/dns-mail-公開記録.md` に保存。Web用（apex の A、www）だけを変える計画で、MX・SPF・DKIM・`mail`・`ml-cp` は維持。GitHub側のDNSチェックは「成功」。
 
-## フェーズ5：`sauna-cospa.com` を切替・監視
+## フェーズ5：GitHub Pages への本番切替・無料アドレス化・組織移設
 
 目安：1か月
 
-- 独自ドメインをGitHub Pagesへ向ける。
-- HTTPS、主要ページ、静的地図、アクセス解析を確認する。
-- 404と表示崩れを確認し、GitHub側だけを修正する。
-- 検索エンジン向けの `sitemap.xml` と `robots.txt` を確認する。
-- ConoHaは変更せず、復旧用として残す。
+- 独自ドメインをGitHub Pagesへ向ける（2026-10-06実施）。
+- 結婚ロードマップ等への影響を防ぐため、サイトを独立リポジトリ `sauna-cospa` へ分離（2026-10-08実施）。
+- 月額・年額費用ゼロにするため、独自ドメイン `sauna-cospa.com` を外して GitHub Pages の無料アドレスへ移行（2026-10-22実施）。
+- 公開リポジトリを個人 `kenji0618y` から組織 `gomirachelin` へ移設し、正式URLを `https://gomirachelin.github.io/sauna-cospa/` に統一（2026-11-02実施）。
+- 旧URL（`sauna-cospa.com`・`kenji0618y.github.io/sauna-cospa/`）から新URLへの転送を維持。
+- 検索エンジン向けの `sitemap.xml` と `robots.txt` を新URLへ更新。
 
 完了条件：30日間、重大な問題がなく、ConoHaへ戻す必要がない。
 
-**【切替済み・2026-10-06】** `CNAME` 追加（`2764d1c`）→ ConoHaのDNSで apex の A を GitHub Pages の4件へ、www を CNAME `kenji0618y.github.io` へ変更 → 証明書発行（sauna-cospa.com・www.sauna-cospa.com）→ Enforce HTTPS をオン。トップ、レビュー一覧、地図、サウナ大学、`sitemap.xml`、`robots.txt`、日本語URL、404 をGitHubから配信していることを確認。www と `kenji0618y.github.io` は `https://sauna-cospa.com/` へ転送される。**監視期限：2026-11-05ごろ。**
+**【完了・2026-11-06確認】** 2026-10-06の切替から30日監視期間（〜2026-11-05）が経過し、新URL `https://gomirachelin.github.io/sauna-cospa/` で安定稼働中。旧URLからの転送も正常。
 
-## フェーズ6：ConoHaを終了
+## フェーズ6：ConoHaを終了（自動更新OFF済み・自然満了待ち）
 
-目安：契約期限の1か月前
+目安：契約期限まで放置で自動終了
 
-- **【方針・2026-10-08】** WINGは前払いの「WINGパック」（契約満了日 2027-07-01）。解約は「WINGパックの自動更新をOFF」にして満了日で終わらせる（2027-06-01より前にOFF）。ConoHaのアカウントは退会しない（ドメイン sauna-cospa.com＝更新期限2027-06-14、とDNS設定があるため）。WING終了までに、ConoHaのDNSがWINGなしで使えるかの確認（または別のDNSへ移す）と、`@sauna-cospa.com` メールの使用有無の確認を済ませる。
-- ConoHaにしかないファイル、データベース、メールがないことを再確認する。
-- 最終バックアップを2か所に保存する。
-- ドメイン管理とメールがConoHa解約の影響を受けないことを確認する。
-- WordPressとConoHaを解約する。
-- `docs/STATE.md` に解約日と最終バックアップ先を記録する。
+- **【完了・2026-10-22】** ConoHa WING（契約満了日 2027-07-01）の自動更新をOFFに設定済み。独自ドメイン `sauna-cospa.com`（期限 2027-06-14）も更新せず、期限までは `sauna-cospa-com-redirect` リポジトリで新URLへ自動転送する。
+- ConoHaのWeb主要データ（8,450ファイル）とWordPressデータベース（18テーブルSQL）はローカルへバックアップ済み。
+- 今後は追加の解約手続きや費用発生はなく、契約満了日で自然に終了する。
 
-完了条件：`sauna-cospa.com` がGitHub側で安定稼働し、ConoHaへの依存が0件になる。
+完了条件：サイトがGitHub側で完全無料・安定稼働し、ConoHaの自動更新がOFFになっている（達成済み）。
 
 ## サイト改善ToDo
 
-### 優先A：移行と同時に確認する
+### 優先A：データの整合性とバックアップ
 
-- **【更新・2026-09-06】** 一般公開地図はGitHub内の静的地図へ移行した。GAS v91の全員公開は予備として維持し、全60ページのメニューは `map/` へ接続済み。GoogleログインやGAS公開設定に依存せずGitHub中心で運用するため。
-- Claudeブランチ `claude/grok-stopped-tznre4` は丸ごとマージしない。安全確認済みの2ファイルはPR #3で個別に取り込み済み。有用なドキュメントは必要になった時点で個別に確認する。
+- **【次の最優先】** 2026-10-28に追加された「さふぃスパ沖縄」のデータを正本（`data/rankings.json`・`data/map-facilities.json`）へ反映し、`scripts/build_rankings.py` を `/sauna-cospa/` パスに対応させたうえで、`10項目別ランキング/index.html`・`reviews/index.html`・`map/index.html` を再生成する。
+- **【更新・2026-09-06】** 一般公開地図はGitHub内の静的地図へ移行済み。GAS v91の全員公開は予備として維持。
 - ランキング・地図・レビューで施設数、重複、閉店・閉館の扱いを統一する。
 - **【完了・2026-09-07】** 10評価項目⑤・⑦・⑧の定義差を整理し、`docs/10項目評価基準.md` とランキングの正本データへ反映した。
 - 「タイパ」が `0.0` の施設を確認し、未入力か意図した値かを整理する。
-- 地図の座標未登録施設を確認し、住所と座標を少しずつ補完する。
-- GAS v91の最新ソースは秘密情報とGoogle Sheets IDの実値を除いて`gomirachelin-work/gas-backup-sanitized/` に準備済み。公開GitHubへの送信は明示承認待ち。Google Sheetsは地図用の値スナップショットを確認済みだが、数式・書式・他シートを含む完全バックアップは未完了。
+- 地図の座標未登録施設（残り65件）を確認し、住所と座標を少しずつ補完する。
+- GAS v91の最新ソースは秘密情報とGoogle Sheets IDの実値を除いて `gomirachelin-work/gas-backup-sanitized/` に準備済み。公開GitHubへの送信は明示承認待ち。Google Sheetsは地図用の値スナップショットを確認済みだが、数式・書式・他シートを含む完全バックアップは未完了。
 
-### 優先B：GitHub Pagesのテスト公開前に直す
+### 優先B：表示と導線の整理
 
-- `sauna-app.webmanifest` と `sauna-icon-180.png` はPR #3で追加し、GitHub側のリンク切れ2件を解消済み。
-- `404.html` は不要なHTMLサイトマップ導線を除いた版をGitHub mainへ追加済み。
-- `.nojekyll` はGitHub mainへ追加済み。
-- **【完了・2026-10-06】** `CNAME` はDNSの記録と戻し方を保存したあとで追加した（`2764d1c`）。
+- **【完了】** `sauna-app.webmanifest`、`sauna-icon-180.png`、`404.html`、`.nojekyll`、`robots.txt`、`sitemap.xml` を整備し、新URL `https://gomirachelin.github.io/sauna-cospa/` に対応済み。
 - **【完了・2026-09-06】** 通常ランキングと10項目別ランキングを、`data/rankings.json` と生成スクリプトで1か所から更新できるようにした。
-- レビュー一覧を共通メニューから開けるようにする。
-- WordPress固有の `/?page_id=37` はトップページで静的な `/why/` へ変更済み（`104896e`）。
+- レビュー一覧を共通メニューから開けるようにするか検討する（現在はトップページの「レビュー一覧を見る」ボタンから移動）。
 - `sauna-daigaku.html` と `sauna-university/index.html` の役割を整理する。
-- WordPressの `wp-content/uploads` を参照していた画像35枚はGitHub側へ移行済み（`146bfa6`、`0f89c3b`）。残存参照0件を確認済み。
-- 検索エンジン用の `sitemap.xml` と `robots.txt` を確認する。サイトのメニューには追加しない。
+- 神戸サウナの記事にある重複したリンク枠2組を1組に整理する。
+- 二人のスマホで確認が済んだら一時確認ページ `kekkon-check/` を削除する。
 
 ### 優先C：移行後も続ける運用
 
-- 新しいレビュー記事の追加手順と `scripts/gen_reviews.py` を使った一覧更新を簡単にする。
+- 新しいレビュー記事の追加手順（`docs/新規レビュー記事の追加手順.md`）にそって記事や未作成本文（ふくの湯・オリエンタル3）を追加する。
 - 新規施設を追加するとき、ランキング・地図・レビューを同じデータから更新できる形を目指す。
 - パソコンとスマートフォンの表示、リンク切れ、404を定期的に確認する。
-- アクセス解析、問い合わせフォーム、Amazonなどの広告リンクを定期的に確認する。
+- アクセス解析、問い合わせフォーム、Amazonなどの広告リンク（およびAmazonアソシエイト登録サイトURL）を定期的に確認する。
 - 作業のたびに `docs/STATE.md` と必要な引き継ぎMarkdownを更新する。
 
 ## 完了済み
@@ -166,31 +160,23 @@ HTMLの見える化版：`docs/roadmap.html`
 - GAS地図をバージョン91へ更新し、都道府県境界、掲載施設数、施設ピンを1枚に統合した。
 - 地図のFILTER欄を削除した。
 - GAS地図の公開設定を「全員」に変更し、未ログインで開けることを確認した（2026-09-06）。
-- サイトのメニューを持つ全60ページへ「サウナ地図」を統一追加した（2026-09-06）。
-- `map/index.html` にログイン不要の静的地図を追加し、全60ページのリンクをGAS URLから静的地図へ変更した。
-- Pages公開URLで未ログイン表示、東京都選択、縮尺9以上の施設ピン、施設詳細を確認した。
-- リポジトリを `kenji0618y.github.io` へ変更し、ルートURLでトップ、CSS、メニュー、静的地図を正常表示した。DNS変更なし。
-- GAS v91の `Code.gs` と統合版 `mapView.html` を、Google Sheets IDと秘密情報の実値を除いて `gomirachelin-work/gas-backup-sanitized/` に準備した。公開GitHubへの送信は明示承認待ち。
-- `AGENTS.md` に全AI共通のMarkdown更新ルールを一元化した。ClaudeとGeminiは1行import、GrokとCursorは `AGENTS.md` を直接読む。
-- `docs/STATE.md` と `docs/AI引き継ぎ.md` を整備した。
-- PR #3で `sauna-app.webmanifest` と `sauna-icon-180.png` だけをmainへ追加し、GitHub側のリンク切れ2件を解消した。既存ファイル、ConoHa本番、DNSは変更していない。
-- フェーズ2計画書、`.nojekyll`、`robots.txt`、サイトマップ導線を除いた `404.html` をGitHub mainへ追加した。
-- トップの大きなWHYボタンを静的URL `/why/` へ修正し、差分が1行だけであることを確認した（`104896e`）。
-- サウナ大学の画像35枚とハッシュ一覧をGitHubへ追加した（`146bfa6`）。
-- `sauna-daigaku.html` の画像参照35件をGitHub内パスへ変更した（`0f89c3b`）。
+- サイトのメニューを持つ全ページへ「サウナ地図」を統一追加した（2026-09-06）。
+- `map/index.html` にログイン不要の静的地図を追加し、全ページのリンクをGAS URLから静的地図へ変更した。
+- 地図の施設データを `data/map-facilities.json` に正本化し、109/174施設の座標ピンを登録した（2026-09-07〜09-08）。
+- ランキングの正本データを `data/rankings.json` に一本化し、`scripts/build_rankings.py` で2つのランキングページを自動生成できるようにした（2026-09-06）。
+- サウナ大学の「次の未完了レッスンへ」ボタン追加、空レビュー10本への本文追加、Amazonアソシエイト必須表記とレビュー記事のAmazon枠追加を反映した（2026-09-18〜10-03）。
+- ConoHa WINGの自動更新をOFFにし、独自ドメインを外して月額・年額費用ゼロのGitHub Pages運用へ移行した（2026-10-22）。
+- 「さふぃスパ沖縄」のレビュー記事を公開した（2026-10-28）。
+- 公開リポジトリを組織 `gomirachelin/sauna-cospa`（`https://gomirachelin.github.io/sauna-cospa/`）へ移設し、旧URLからの転送リポジトリを整備した（2026-11-02）。
 
 ## 現在の次の作業
 
-0. ~~Amazon本審査の前に、独自ドメインをGitHub Pagesへ切り替える。~~ **2026-10-06完了。** 次は30日監視（2026-11-05ごろまで）：表示崩れ・404・アクセス解析を確認し、修正はGitHub側だけで行う。ConoHaは復旧用に残し、Amazon審査の完了まで解約しない。
-   - 任意の追加対策：GitHubのアカウント設定で `sauna-cospa.com` を「検証済みドメイン」にする（DNSにTXTを1件追加）。リポジトリから独自ドメインを外したときに、他人に使われるのを防ぐため。
-1. ~~`data/urls.json` の重複投稿記録を履歴としてどう残すか決める。~~ `data/url-history.json` へ分離済み。
-2. 地図の座標未登録65施設を、所在地が具体的なものから小分けに補完する。これまでに55施設を追加し、109/174施設へピンを表示できる。外部照合は利用者の明示承認済み。
-3. Google Sheets全体を非公開領域へバックアップし、シート数・数式・主要行数を照合する。
+1. **「さふぃスパ沖縄」の未反映分をそろえる**：`data/rankings.json` と `data/map-facilities.json` に追加・反映し、`scripts/build_rankings.py` のリンク出力を `/sauna-cospa/〜` に合わせたうえで、`ランキング/index.html`・`10項目別ランキング/index.html`・`reviews/index.html`・`map/index.html` を再生成して一致させる。
+2. **地図の座標未登録65施設を小分けに補完する**：これまでに55施設を追加し、109/174施設へピンを表示できる。
+3. **残りの記事・データ整備**：本文未作成の2記事（ふくの湯・オリエンタル3）や神戸サウナの重複枠整理、タイパ0.0施設の確認、Google Sheets全体の非公開バックアップ。
 
 ## 中止条件
 
-- バックアップが作成できない場合は、削除・移動・DNS変更をしない。
-- メールの管理先が不明な場合は、DNSを変更しない。
-- テスト公開に重大な404や表示崩れがある場合は、独自ドメインを切り替えない。
-- 静的地図がPages URLで未ログイン表示できない場合は、地図リンクを本番へ切り替えない。
+- バックアップが作成できない場合は、削除・移動を行わない。
+- `kenji0618y.github.io` や `gomirachelin/sauna-cospa` に `CNAME` を勝手に追加しない（他サイトへの影響やドメイン費用を防ぐため）。
 - Claudeブランチには撤回済みのHTMLサイトマップ追加が含まれるため、ブランチ全体をそのままマージしない。

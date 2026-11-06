@@ -1,41 +1,36 @@
-# GOMIRACHELIN 静的HTML（ConoHaアップロード用）
+# GOMIRACHELIN（コスパで選ぶ、全国サウナ正直ガイド）
 
-## ⚠️ 重要：kenji0618y.github.io に CNAME を足さないこと（2026-10-08）
+## ⚠️ 重要：現在の公開先と CNAME に関する注意（2026-10-08〜11-02更新）
 
-- **Do NOT add a CNAME to kenji0618y.github.io: it moves every project site (kekkon-roadmap, henshu-lock) to that domain. sauna-cospa.com lives in gomirachelin/sauna-cospa.**
-- 2026-10-06 にここへ `CNAME`（sauna-cospa.com）を足したところ、GitHubの仕様で同じアカウントのプロジェクトサイト（kekkon-roadmap・henshu-lock）まで `sauna-cospa.com/〜` へ転送され、結婚ロードマップの端末データとLINE通知が見えなくなった（公式：https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages ）。
-- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を **https://github.com/gomirachelin/sauna-cospa** へ履歴ごと移し、独自ドメイン `sauna-cospa.com` はそちらに付け替えた。サイトの正本・作業記録の続きは sauna-cospa リポジトリ。
-- 旧リポジトリ kenji0618y.github.io には、`sauna-cospa.com` へ転送するだけの `index.html`・`404.html`（外部スクリプトなし）と、2026-10-08 までの作業記録（docs/）だけを残している。ここにサイトのページや外部スクリプト（GTM・解析など）を戻さないこと。
-- DNS（ConoHa）は変更していない。www の CNAME `kenji0618y.github.io` はGitHubの推奨どおりで、プロジェクトリポジトリの独自ドメインでもこのままでよい。
+- **Do NOT add a CNAME to kenji0618y.github.io or gomirachelin/sauna-cospa. The public site is hosted at https://gomirachelin.github.io/sauna-cospa/ (repo: gomirachelin/sauna-cospa).**
+- 2026-10-06 に `kenji0618y.github.io` へ `CNAME`（sauna-cospa.com）を足したところ、GitHubの仕様で同じアカウントのプロジェクトサイト（kekkon-roadmap・henshu-lock）まで `sauna-cospa.com/〜` へ転送され、結婚ロードマップの端末データとLINE通知が見えなくなった（公式：https://docs.github.com/en/pages/configuring-a-custom-domain-for-your-github-pages-site/about-custom-domains-and-github-pages ）。
+- 2026-10-08 にサウナのサイト（GOMIRACHELIN）を別リポジトリへ分離し、2026-10-22 に月額・年額費用ゼロで運用するため独自ドメイン `sauna-cospa.com` を外して GitHub Pages の無料アドレスへ切り替えた（ConoHa WING 自動更新OFF済み）。
+- 2026-11-02 に公開リポジトリを個人 `kenji0618y` から組織 `gomirachelin`（**https://github.com/gomirachelin/sauna-cospa**）へ移設した。現在の正式な公開URLは **https://gomirachelin.github.io/sauna-cospa/**（サイト内の内部パスは `/sauna-cospa/〜`）。
+- 旧URLからの転送は専用リポジトリで維持している（`kenji0618y/sauna-cospa`・`kenji0618y/sauna-cospa-com-redirect`・`kenji0618y/kenji0618y.github.io`）。
 
-このフォルダは、公開中の WordPress サイト [https://sauna-cospa.com](https://sauna-cospa.com) を **読み取り専用（GET / REST）** で書き出した静的HTMLです。
+## 概要
 
-## 大事なこと
+- **公開URL**: [https://gomirachelin.github.io/sauna-cospa/](https://gomirachelin.github.io/sauna-cospa/)
+- **正本リポジトリ**: [https://github.com/gomirachelin/sauna-cospa](https://github.com/gomirachelin/sauna-cospa)
+- **公開のしくみ**: このリポジトリの `main` ブランチへ反映（push）すると、GitHub Pages でそのまま本番公開されます（ConoHa サーバーへのアップロードは不要です）。
+- **AIで作業するとき**: `AGENTS.md` と `docs/STATE.md` を最初に読み、作業のたびに記録を更新してください。
 
-- **本番の WordPress は一切変更していません。** ログイン、投稿、削除、設定変更はしていません。
-- これらは、あとから ConoHa のドキュメントルートへアップロードするためのサイトファイルです。
-- Git の正本は公開リポジトリ https://github.com/gomirachelin/sauna-cospa です（2026-10-08に kenji0618y.github.io から移動）。**Git コマンドは覚えなくて大丈夫です。** 変更はAIに依頼し、`AGENTS.md` と作業記録を毎回更新してください。
-
-## 中身
+## 主なファイルとフォルダ
 
 | パス | 内容 |
 |------|------|
-| `index.html` | トップ（WP ページ id 57 / slug `top`） |
-| `{スラッグ}/index.html` | 各投稿・固定ページ（Unicode スラッグ、末尾スラッシュ相当） |
-| `sauna-daigaku.html` | 公開中の静的ファイルをそのまま保存（Amazon タグ `gomirachelin-22` を維持） |
+| `index.html` | トップページ |
+| `{スラッグ}/index.html` | 各サウナ施設のレビュー・固定ページ |
+| `ランキング/index.html` | 全国コスパランキング（`scripts/build_rankings.py` で生成） |
+| `10項目別ランキング/index.html` | 10項目別の順位一覧（`scripts/build_rankings.py` で生成） |
+| `reviews/index.html` | レビュー一覧（`scripts/gen_reviews.py` で生成） |
+| `map/index.html` | ログイン不要の全国サウナ地図（`scripts/build_map_data.py` で生成） |
+| `sauna-daigaku.html` / `sauna-university/` | サウナ大学（カリキュラム・学習コンテンツ） |
 | `css/site.css` | 黒×金の共通ヘッダー / ナビ / フッター |
-| `reviews/index.html` | レビュー一覧（自作ページ。`scripts/gen_reviews.py` で生成） |
-| `scripts/gen_reviews.py` | レビュー一覧を作り直すスクリプト |
-| `docs/新規レビュー記事の追加手順.md` | サウナを1軒追加するときの手順書 |
-| `sitemap.xml` | 書き出した URL 一覧 |
-| `data/urls.json` | id / slug / title / link / date / type |
+| `data/rankings.json` | ランキング・10項目スコアの正本データ |
+| `data/map-facilities.json` | サウナ地図の施設・座標の正本データ |
+| `data/urls.json` / `data/url-history.json` | 現在公開中のページURL一覧と旧URL履歴 |
+| `sitemap.xml` / `robots.txt` | 検索エンジン向けのサイトマップと設定 |
+| `docs/` | サイトの現状（`STATE.md`）、ロードマップ（`GitHub移行ロードマップ.md` / `roadmap.html`）、各種手順書 |
 
-ナビ: トップ / WHY / ランキング / サウナ大学 / お問い合わせ
-
-トップページの「レビュー一覧を見る」から `/reviews/` に行けます。
-
-デザインは `sauna-daigaku.html` の `:root`（黒地、金 `#d4a017`、Shippori Mincho / Oswald / Zen Kaku Gothic New）に合わせています。本文の点数・レビュー文・リンク（アフィリエイト含む）は WordPress の `content.rendered` をそのまま包んでいます。ランキング・TOP3・EVALUATION の GAS iframe と、お問い合わせの Google フォームもそのまま残しています。
-
-## アップロードのとき
-
-ConoHa の公開ディレクトリに、このフォルダの **中身**（`index.html` がルートに来るように）を置けば表示されます。本番 WordPress を止める・移す作業は、このファイル作成とは別の判断です。
+ナビメニュー: トップ / WHY / ランキング / サウナ大学 / サウナ地図 / お問い合わせ（トップページの「レビュー一覧を見る」から `/sauna-cospa/reviews/` へ移動できます）。
