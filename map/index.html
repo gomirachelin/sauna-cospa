@@ -443,9 +443,10 @@ function countByPrefecture(rows) {
 function selectPref(pref) {
   SEL_PREF = pref;
   if (PMAP && PREF_LAYER) {
+    PMAP.closePopup();
     if (!pref) PMAP.fitBounds([[25.3,126.3],[45.8,146.2]]);
     else PREF_LAYER.eachLayer(function(layer){
-      if(layer.feature.properties.P === pref) PMAP.fitBounds(layer.feature.properties.mainBounds,{padding:[24,24],maxZoom:8});
+      if(layer.feature.properties.P === pref) PMAP.fitBounds(layer.feature.properties.mainBounds,{padding:[24,24],maxZoom:11});
     });
   }
   render();
@@ -473,8 +474,8 @@ function drawMap(stats) {
       layer.on('click',function(){selectPref(feature.properties.P===SEL_PREF?null:feature.properties.P);});
     }}).addTo(PMAP);
     COUNT_LAYER=L.layerGroup().addTo(PMAP);
+    FACILITY_LAYER=L.layerGroup().addTo(PMAP);
     PMAP.on('zoomend moveend',refreshMapDetails);
-    buildFacilityPins();
   }
   var max=Math.max.apply(null,Object.keys(stats).map(function(p){return stats[p];}).concat([1]));
   PREF_LAYER.eachLayer(function(layer){
@@ -482,9 +483,12 @@ function drawMap(stats) {
     layer.setStyle({color:name===SEL_PREF?'#be123c':'#586779',weight:name===SEL_PREF?3:1.2,
       fillColor:count?'hsl(43, 90%, '+(88-40*count/max)+'%)':'#e5e7eb',fillOpacity:count?.5:.22});
     layer.unbindTooltip();
-    layer.bindTooltip(name+' '+count+'施設',{sticky:true});
+    if(!SEL_PREF){
+      layer.bindTooltip(name+' '+count+'施設',{sticky:true});
+    }
   });
   CURRENT_COUNTS=stats;
+  buildFacilityPins();
   refreshMapDetails();
   setTimeout(function(){PMAP.invalidateSize();},60);
 }
@@ -492,7 +496,7 @@ function drawMap(stats) {
 function drawCountLabels() {
   if(!COUNT_LAYER) return;
   COUNT_LAYER.clearLayers();
-  if(PMAP.getZoom()>=9) return;
+  if(SEL_PREF || PMAP.getZoom()>=7) return;
   var size=PMAP.getSize(), labels=[], detailed=PMAP.getZoom()>=6;
   var width=detailed?64:31,height=detailed?39:27;
   PREF_GEO.features.forEach(function(feature){
@@ -515,7 +519,7 @@ function drawCountLabels() {
     });
   }
   labels.forEach(function(item){
-    var feature=item.feature,name=feature.properties.P,count=CURRENT_COUNTS[name]||0;
+    var feature=item.feature,name=item.feature.properties.P,count=CURRENT_COUNTS[name]||0;
     var anchor=feature.properties.center,pos=PMAP.containerPointToLatLng([item.x,item.y]);
     if(Math.hypot(item.x-item.ax,item.y-item.ay)>8){
       L.polyline([anchor,pos],{color:'#475569',weight:1,opacity:.8,interactive:false}).addTo(COUNT_LAYER);
@@ -600,38 +604,62 @@ function mapUrl(fc) {
 var FACILITY_LAYER=null;
 function validPosition(fc){return Number.isFinite(fc.lat)&&Number.isFinite(fc.lng)&&fc.lat>=20&&fc.lat<=46&&fc.lng>=122&&fc.lng<=154;}
 function buildFacilityPins(){
-  FACILITY_LAYER=L.layerGroup();
+  if(!FACILITY_LAYER) return;
+  FACILITY_LAYER.clearLayers();
+  var target=SEL_PREF?ALL.filter(function(fc){return fc.pref===SEL_PREF;}):ALL;
   var grouped=Object.create(null);
-  ALL.filter(validPosition).forEach(function(fc){
+  target.filter(validPosition).forEach(function(fc){
     var key=fc.lat+','+fc.lng;
     (grouped[key]||(grouped[key]=[])).push(fc);
   });
   Object.keys(grouped).forEach(function(key){
     var group=grouped[key],fc=group[0];
     var title=group.length===1?fc.name:group.length+'施設（同じ登録位置）';
-    var marker=L.marker([fc.lat,fc.lng],{title:title,
-      icon:L.divIcon({className:'facility-marker'+(group.every(function(f){return f.closed;})?' closed-pin':''),html:group.length>1?String(group.length):'♨',iconSize:[31,31],iconAnchor:[15,15]})});
-    marker.bindTooltip(esc(title));
-    marker.bindPopup(group.map(function(f){
-      return '<section class="facility-detail"><h3>'+esc(f.name)+'</h3><div>'+esc(f.pref)+' '+esc(f.area)+(f.closed?' ・閉店／閉館の記録あり':'')+'</div>'+
-        '<div>総合点 '+(f.perf>0?esc(f.perf)+'点':'未評価')+' ／ コスパ '+(f.cospa>0?esc(f.cospa):'未評価')+'</div>'+
-        (f.price?'<div>平日料金 ¥'+esc(f.price.toLocaleString())+'</div>':'')+
-        '<a href="'+mapUrl(f)+'" target="_blank" rel="noopener">Googleマップで開く</a>'+
-        (f.url&&/^https?:\/\//i.test(f.url)?'<a href="'+esc(f.url)+'" target="_blank" rel="noopener nofollow">公式サイト</a>':'')+'</section>';
-    }).join(''),{maxHeight:330,maxWidth:310});
+    var marker=L.marker([fc.lat,fc.lng],{
+      title:title,
+      zIndexOffset:1000,
+      icon:L.divIcon({
+        className:'facility-marker'+(group.every(function(f){return f.closed;})?' closed-pin':''),
+        html:group.length>1?String(group.length):'♨',
+        iconSize:[31,31],
+        iconAnchor:[15,15],
+        popupAnchor:[0,-14]
+      })
+    });
+    var popupHtml=group.map(function(f){
+      var perfStr=f.perf>0?(Math.round(f.perf*10)/10)+'点':'未評価';
+      var cospaStr=f.cospa>0?String(Math.round(f.cospa*10)/10):'未評価';
+      var priceStr=f.price>0?'¥'+f.price.toLocaleString():'未登録';
+      return '<section class="facility-detail">' +
+        '<h3>'+esc(f.name)+'</h3>' +
+        '<div class="fd-area">'+esc(f.pref)+(f.area?' ／ '+esc(f.area):'')+(f.closed?' ・閉店／閉館':'')+'</div>' +
+        '<div class="fd-scores">' +
+          '<div class="fd-score-box"><span class="fd-score-lbl">総合点</span><span class="fd-score-val">'+esc(perfStr)+'</span></div>' +
+          '<div class="fd-score-box"><span class="fd-score-lbl">コスパ</span><span class="fd-score-val cospa">'+esc(cospaStr)+'</span></div>' +
+        '</div>' +
+        '<div class="fd-price">平日料金：<b>'+esc(priceStr)+'</b>'+(f.yenH>0?'（¥'+Math.round(f.yenH)+'/h）':'')+'</div>' +
+        '<div class="fd-links">' +
+          '<a href="'+mapUrl(f)+'" target="_blank" rel="noopener">Googleマップ</a>' +
+          (f.url&&/^https?:\/\//i.test(f.url)?'<a href="'+esc(f.url)+'" target="_blank" rel="noopener nofollow">公式サイト</a>':'') +
+        '</div>' +
+      '</section>';
+    }).join('');
+    marker.bindPopup(popupHtml,{maxHeight:330,maxWidth:310});
+    marker.on('click',function(e){
+      L.DomEvent.stopPropagation(e);
+      this.openPopup();
+    });
     FACILITY_LAYER.addLayer(marker);
   });
 }
 function refreshMapDetails(){
   drawCountLabels();
   if(!FACILITY_LAYER) return;
-  var detailed=PMAP.getZoom()>=9;
-  if(detailed&&!PMAP.hasLayer(FACILITY_LAYER)) FACILITY_LAYER.addTo(PMAP);
-  if(!detailed&&PMAP.hasLayer(FACILITY_LAYER)) PMAP.removeLayer(FACILITY_LAYER);
+  if(!PMAP.hasLayer(FACILITY_LAYER)) FACILITY_LAYER.addTo(PMAP);
   var selected=SEL_PREF?ALL.filter(function(fc){return fc.pref===SEL_PREF;}):ALL;
   var located=selected.filter(validPosition).length;
-  document.getElementById('noCoord').textContent=(detailed?'施設ピンを表示中。':'拡大すると施設ピンを表示します。')+
-    (SEL_PREF||'全国')+'：位置登録 '+located+'施設 ／ 未登録 '+(selected.length-located)+'施設。位置未登録の施設も下の一覧からGoogleマップを開けます。';
+  document.getElementById('noCoord').textContent='♨ピンを押すと施設情報がポップアップします。'+
+    (SEL_PREF||'全国')+'：位置登録 '+located+'施設 ／ 未登録 '+(selected.length-located)+'施設（未登録の施設も下の一覧からGoogleマップを開けます）。';
 }
 
 function esc(s) {
