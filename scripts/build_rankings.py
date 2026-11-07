@@ -89,7 +89,7 @@ def load_data() -> dict:
 
 def facility_href(item: dict) -> str | None:
     slug = item.get("slug")
-    return f"/{quote(str(slug), safe='')}/" if slug else None
+    return f"/sauna-cospa/{quote(str(slug), safe='')}/" if slug else None
 
 
 def render_row(item: dict, score: float, position: int) -> str:

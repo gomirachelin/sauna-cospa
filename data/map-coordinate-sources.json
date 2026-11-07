@@ -605,6 +605,160 @@
       "verifiedBy": "公式住所を国土地理院住所検索で照合",
       "sourceUrl": "https://minamikashiwa-sumire.com/",
       "checked": "2026-09-08"
+    },
+    {
+      "sourceRow": 111,
+      "name": "SHIRAHAMA KEYTERRACE",
+      "pref": "和歌山県",
+      "lat": 33.67547,
+      "lng": 135.337198,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://www.keyterrace.co.jp/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 112,
+      "name": "二ノ丸温泉",
+      "pref": "和歌山県",
+      "lat": 34.018164,
+      "lng": 135.226423,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://ninomaru-onsen.jp/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 113,
+      "name": "松本湯",
+      "pref": "東京都",
+      "lat": 35.71099,
+      "lng": 139.689685,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://www.matsumoto-yu.com/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 114,
+      "name": "弁天湯",
+      "pref": "東京都",
+      "lat": 35.695477,
+      "lng": 139.714916,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://bentenyu.jimdo.com/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 115,
+      "name": "SPABLIC 赤坂湯屋",
+      "pref": "東京都",
+      "lat": 35.676038,
+      "lng": 139.736765,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://spablic.com/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 116,
+      "name": "黄金湯",
+      "pref": "東京都",
+      "lat": 35.702342,
+      "lng": 139.815247,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://koganeyu.com/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 117,
+      "name": "温泉バルコニー キング&クイーン",
+      "pref": "埼玉県",
+      "lat": 35.811492,
+      "lng": 139.430257,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://king-and-queen.site/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 118,
+      "name": "8Seas Sauna HIRA",
+      "pref": "滋賀県",
+      "lat": 35.237351,
+      "lng": 135.946545,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://8sauna.jp/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 121,
+      "name": "きのえ温泉 ホテル清風館",
+      "pref": "広島県",
+      "lat": 34.215009,
+      "lng": 132.919207,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://hotel-seifukan.co.jp/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 124,
+      "name": "ニューニシノサウナ＆天然温泉",
+      "pref": "鹿児島県",
+      "lat": 31.589121,
+      "lng": 130.556692,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://new-nishino.co.jp/hotel-onsen-spa-sauna/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 125,
+      "name": "エクセルサウナタイセイ",
+      "pref": "鹿児島県",
+      "lat": 31.586081,
+      "lng": 130.544783,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://www.taisei-grp.co.jp/excelsauna/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 126,
+      "name": "天然温泉なにわの湯",
+      "pref": "大阪府",
+      "lat": 34.715195,
+      "lng": 135.513613,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://www.naniwanoyu.com/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 128,
+      "name": "スッカマ源氏の湯",
+      "pref": "京都府",
+      "lat": 34.7463742,
+      "lng": 135.76747018,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "https://genji-yu.com/sukkama/",
+      "checked": "2026-11-07"
+    },
+    {
+      "sourceRow": 129,
+      "name": "なにわ健康ランド 湯〜トピア",
+      "pref": "大阪府",
+      "lat": 34.6645924,
+      "lng": 135.5686525,
+      "provider": "official site and NAVITIME/MapFan address match",
+      "verifiedBy": "公式住所（都道府県・市区町村・番地）と地図スポット座標を照合",
+      "sourceUrl": "http://naniwa-utopia.com/",
+      "checked": "2026-11-07"
     }
   ]
 }
