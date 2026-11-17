@@ -2210,9 +2210,9 @@
       "price": 2900,
       "min": 15,
       "yen_h": 1450,
-      "total": 77,
-      "cospa": 10.5,
-      "taipa": 42.6,
+      "total": 76,
+      "cospa": 10.3,
+      "taipa": 42,
       "slug": "大阪サウナdesse",
       "closed": false,
       "official": "https://desse.osaka/",
@@ -2225,7 +2225,7 @@
         "a6": 10.0,
         "a7": 7.0,
         "a8": 7.0,
-        "a9": 10.0,
+        "a9": 9.0,
         "a10": 6.0
       }
     },

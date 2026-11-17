@@ -159,8 +159,8 @@ page = """<!DOCTYPE html>
     </a>
     <button class="nav-toggle" type="button" onclick="document.getElementById('nav-check').click()" aria-label="メニュー">MENU</button>
     <nav class="nav-links" aria-label="メインメニュー">
-        <a href="/sauna-cospa/">トップ</a>
         <a href="/sauna-cospa/why/">WHY</a>
+        <a href="/sauna-cospa/how/">HOW</a>
         <a href="/sauna-cospa/ランキング/">ランキング</a>
         <a href="/sauna-cospa/sauna-university/">サウナ大学</a>
         <a href="/sauna-cospa/map/">サウナ地図</a>
@@ -204,6 +204,7 @@ page = """<!DOCTYPE html>
     </div>
     <ul class="footer-links">
           <li><a href="/sauna-cospa/why/">WHY</a></li>
+          <li><a href="/sauna-cospa/how/">HOW</a></li>
           <li><a href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">ランキング</a></li>
           <li><a href="/sauna-cospa/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a></li>
           <li><a href="/sauna-cospa/sauna-university/">サウナ大学</a></li>
