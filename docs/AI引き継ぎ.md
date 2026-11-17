@@ -2,6 +2,11 @@
 
 最終更新：2026-11-07
 
+## 2026-11-07 「WHY」をトップ扱いとし、旧トップをスリム化して「HOW」ページへ変更
+
+- **実施内容**：利用者の指示と選択に基づき、`index.html`（`/sauna-cospa/`）と `why/index.html`（`/sauna-cospa/why/`）の両方で「WHY」を表示してサイトの顔（トップ）として扱い、旧トップから冒頭ヒーロー・マーキー・短いWHY・COMING SOONを削除して「HOW WE MEASURE（コスパ・10の物差し・主要都市）＋総合トップ3＋レビュー一覧導線」だけを残した `how/index.html`（`/sauna-cospa/how/`）を新設。全ページおよび `scripts/gen_reviews.py` のナビゲーションを `WHY`｜`HOW`｜`ランキング`｜`サウナ大学`｜`サウナ地図`｜`お問い合わせ` に更新し、`data/urls.json`・`sitemap.xml` に `how` を追加。
+- **GitHub反映状況**：作業ルームに `kenji0618y/*` と `gomirachelin/sauna-cospa` が混在しているため GitHub App トークンが `kenji0618y` 側に発行される仕様となっており、`kenji0618y/sauna-cospa-pr` フォークの `main` および `update-2026-11-17` ブランチへ全変更を push 済み。`https://github.com/gomirachelin/sauna-cospa/compare/main...kenji0618y:sauna-cospa-pr:main?expand=1` からマージすることで本番へ反映される。
+
 ## 2026-11-07 WHYページ（`why/index.html`）の文章を運営者修正版へ更新・サウナ大学リンク追加
 
 - **実施内容**：利用者が編集した文章と指示に基づき、`why/index.html` の4箇所（「肩書きと実物は、別物だった。」「『讃えられているサウナ』と自分の体感」「もちろん施設とは利害関係のない一般人だ。」および「サウナ大学」設立段落の追加）を反映し、文中の「サウナ大学」とページ下部の「サウナ大学へ進む ›」ボタンに `/sauna-cospa/sauna-university/` へのリンクを追加。
