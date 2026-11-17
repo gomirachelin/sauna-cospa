@@ -4040,8 +4040,8 @@
     "closed": false,
     "price": 2900,
     "stay": 2,
-    "perf": 77,
-    "cospa": 10.5,
+    "perf": 76,
+    "cospa": 10.3,
     "yenH": 1450,
     "url": "https://desse.osaka/",
     "gaiki": true,
@@ -4059,7 +4059,7 @@
       "a6": 10,
       "a7": 7,
       "a8": 7,
-      "a9": 10,
+      "a9": 9,
       "a10": 6
     }
   },

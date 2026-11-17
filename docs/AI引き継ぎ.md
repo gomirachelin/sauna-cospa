@@ -2,6 +2,10 @@
 
 最終更新：2026-11-07
 
+## 2026-11-07 大阪サウナDESSEの「⑨独自性」を9点へ修正・全ページ同期
+
+- **実施内容**：利用者の指示（「desseの独自性を9にして」）に基づき、Google Sheets `GOMIRACHELIN_v13`（`サウナDB!T130`）の `⑨独自性` を `10` → `9` に更新（総合 `77` → `76`、コスパ `10.5` → `10.3`、タイパ `42.6` → `42.0`）。あわせて `data/rankings.json`・`data/map-facilities.json`・`index.html`・`大阪サウナdesse/index.html` を更新し、`build_rankings.py`・`gen_reviews.py`・`build_map_data.py` で全一覧・地図ページを再生成。
+
 ## 2026-11-07 サウナ地図のピン色分け・スマホ操作バー整理・残り座標21件追加（170/174件）
 
 - **実施内容**：
