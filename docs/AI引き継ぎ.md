@@ -1,6 +1,16 @@
 # AI引き継ぎ
 
-最終更新：2026-11-07
+最終更新：2026-11-17
+
+## 2026-11-17 メニュー・見出しの英語大文字統一、MAP共通ヘッダー・フッター追加、「⑨独自性」統一
+
+- **実施内容**：
+  1. 全HTMLページ（56ファイル更新）および `scripts/gen_reviews.py` の上部メニューを `WHY` / `HOW` / `RANKING` / `REVIEWS` / `MAP` / `UNIVERSITY` / `CONTACT` に統一し、フッターも統一。
+  2. `ランキング/index.html`（`RANKING`）、`sauna-university/index.html`（`UNIVERSITY`）、`お問い合わせ/index.html`（`CONTACT`）、`map/index.html`（`MAP`）の `<title>`・`<h1>` を英語大文字に統一。
+  3. `map/index.html` に共通ヘッダー・フッターを追加し、仮リンク「← GOMIRACHELINトップへ」を削除。
+  4. `how/index.html`・`ランキング/index.html`・`scripts/gen_reviews.py`・`reviews/index.html`・`docs/10項目評価基準.md` の「⑨唯一無二性」を「⑨独自性」に統一。
+- **検証結果**：`build_rankings.py --check`・`build_map_data.py --check`・`check_url_data.py`・Node構文検査すべて合格。
+- **公開状況**：ローカル `main` にコミット済み。本番反映のため `kenji0618y/sauna-cospa-pr` 経由のPRマージ、または次回チャットでの直接 push が必要。
 
 ## 2026-11-07 「WHY」をトップ扱いとし、旧トップをスリム化して「HOW」ページへ変更
 
