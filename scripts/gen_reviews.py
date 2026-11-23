@@ -41,6 +41,9 @@ for f in FAC:
         "taipa": f.get("taipa"),
         "closed": bool(f.get("closed")),
         "official": f.get("official") or "",
+        "stay": bool(f.get("stay")),
+        "furusato": bool(f.get("furusato")),
+        "rakuten_travel": f.get("rakuten_travel") or "",
         "date": date_by_slug.get(slug, ""),
     })
 
@@ -73,13 +76,33 @@ def place(x):
         parts.append("平日%s円%s" % (x["price"], yh))
     return " ／ ".join(parts)
 
+from urllib.parse import quote
+
+def rakuten_travel_url(x):
+    if x.get("rakuten_travel"):
+        return x["rakuten_travel"]
+    q = x["name"] + (" " + x["pref"] if x["pref"] else "")
+    mall = "https://search.rakuten.co.jp/search/mall/" + quote(q, safe="") + "/"
+    enc = quote(mall, safe="")
+    return "https://hb.afl.rakuten.co.jp/hgc/552f7156.e8f8ce60.552f7157.25972113/?pc=%s&m=%s" % (enc, enc)
+
+def furusato_url(x):
+    p = re.sub(r"[都府県]", "", x["pref"] or "")
+    q = "ふるさと納税 " + (p + " " if p else "") + "サウナ"
+    mall = "https://search.rakuten.co.jp/search/mall/" + quote(q, safe="") + "/"
+    enc = quote(mall, safe="")
+    return "https://hb.afl.rakuten.co.jp/hgc/552f7156.e8f8ce60.552f7157.25972113/?pc=%s&m=%s" % (enc, enc)
+
 rows = []
 for x in items:
     href = "/sauna-cospa/" + x["slug"] + "/"
     tag = '<span class="closed-tag">閉店</span>' if x["closed"] else ""
     chips = ""
+    if x.get("stay"):
+        chips += ('<a class="chip" href="%s" target="_blank" rel="nofollow sponsored noopener" style="border-color:#38bdf8;color:#7dd3fc;">🏨 楽天宿泊</a>' % e(rakuten_travel_url(x)))
+    if x.get("furusato"):
+        chips += ('<a class="chip" href="%s" target="_blank" rel="nofollow sponsored noopener" style="border-color:#fb7185;color:#fda4af;">🎁 ふるさと納税</a>' % e(furusato_url(x)))
     q = x["name"] + ((" " + x["pref"]) if x["pref"] else "")
-    from urllib.parse import quote
     chips += ('<a class="chip" href="https://www.google.com/maps/search/?api=1&amp;query=%s"'
               ' target="_blank" rel="noopener">MAP</a>' % quote(q, safe=""))
     if x["official"]:
@@ -104,13 +127,12 @@ for x in items:
 
 column_row = ""
 if os.path.exists(os.path.join(ROOT, COLUMN_SLUG, "index.html")):
-    from urllib.parse import quote
     column_row = (
         '      <div class="rank-row has-link">'
         '<div class="pos num">{date}</div>'
         '<div class="info">'
         '<div class="nm"><a class="name-link" href="{href}">{title} <span class="go-arrow">›</span></a></div>'
-        '<div class="pl">コラム ／ 返礼品でととのう、コスパのはなし</div>'
+        '<div class="pl">コラム ／ 返礼品・楽天トラベルでととのう、コスパのはなし</div>'
         '</div>'
         '</div>'.format(
             date=e(date_by_slug.get(COLUMN_SLUG, "")[5:].replace("-", ".")),
@@ -163,7 +185,8 @@ page = """<!DOCTYPE html>
         <a href="/sauna-cospa/how/">HOW</a>
         <a href="/sauna-cospa/ランキング/">RANKING</a>
         <a href="/sauna-cospa/reviews/" class="is-active">REVIEWS</a>
-        <a href="/sauna-cospa/map/">MAP</a>
+        <a href="/sauna-cospa/map/">AREA</a>
+        <a href="/sauna-cospa/world/">WORLD</a>
         <a href="/sauna-cospa/sauna-university/">UNIVERSITY</a>
         <a href="/sauna-cospa/お問い合わせ/">CONTACT</a>
     </nav>
@@ -177,7 +200,7 @@ page = """<!DOCTYPE html>
   <div class="entry-body">
 <h2 style="color:#d4a017;font-size:1.3em;">一軒ずつ、正直に。</h2>
 <p>GOMIRACHELINが実際に足を運んで、①サウナ室②水風呂③休憩④動線⑤ロウリュ⑥スパ内施設⑦スパ外施設⑧清潔さ⑨独自性⑩ホスピタリティの10項目で採点した、全{n}軒の正直レビューです。新しく書いたものから順に並べています。</p>
-<p>スコアの高い順に見たいときは<a href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">RANKING（ランキング）</a>を、10項目それぞれの採点を見比べたいときは<a href="/sauna-cospa/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a>をご覧ください。</p>
+<p>スコアの高い順に見たいときは<a href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">RANKING（ランキング）</a>を、エリア・宿泊可（楽天トラベル）・ふるさと納税から探したいときは<a href="/sauna-cospa/map/">AREA</a>を、10項目それぞれの採点を見比べたいときは<a href="/sauna-cospa/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a>をご覧ください。</p>
 </div>
 <section class="ranking-static" id="reviews" aria-label="サウナレビュー一覧">
   <div class="section-head">
@@ -209,7 +232,8 @@ page = """<!DOCTYPE html>
           <li><a href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">RANKING</a></li>
           <li><a href="/sauna-cospa/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">EVALUATION</a></li>
           <li><a href="/sauna-cospa/reviews/">REVIEWS</a></li>
-          <li><a href="/sauna-cospa/map/">MAP</a></li>
+          <li><a href="/sauna-cospa/map/">AREA</a></li>
+          <li><a href="/sauna-cospa/world/">WORLD</a></li>
           <li><a href="/sauna-cospa/sauna-university/">UNIVERSITY</a></li>
           <li><a href="/sauna-cospa/%E3%81%8A%E5%95%8F%E3%81%84%E5%90%88%E3%82%8F%E3%81%9B/">CONTACT</a></li>
           <li><a href="/sauna-cospa/%E9%81%8B%E5%96%B6%E8%80%85%E6%83%85%E5%A0%B1/">運営者情報</a></li>

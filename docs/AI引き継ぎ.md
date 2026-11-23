@@ -1,6 +1,14 @@
 # AI引き継ぎ
 
-最終更新：2026-11-20
+最終更新：2026-11-23
+
+## 2026-11-23 「AREA」ページ刷新（白い地図廃止）、「WORLD」新設、楽天トラベル宿泊＆ふるさと納税絞り込み追加
+
+- **実施内容**：
+  1. `map/index.html` から白いLeaflet地図を廃止し、地方ボタン・都道府県チップ・条件フィルター（`🏨 泊まれるサウナ（楽天トラベル）`・`🎁 ふるさと納税対象`・`📖 正直レビュー記事あり`・`🍃 外気浴あり`・`🔥 ロウリュあり`）で施設カードを探せる「AREA」ページへ刷新（URL `/sauna-cospa/map/` は維持）。`scripts/build_map_data.py` もポリゴン依存を除去して176施設同期に対応。
+  2. 海外サウナ専用ページ `world/index.html`（`/sauna-cospa/world/`）を新設し、「Yunomori Onsen & Spa（タイ）」の10項目採点と特徴を掲載。全60ページのヘッダー・フッターナビを `WHY` / `HOW` / `RANKING` / `REVIEWS` / `AREA` / `WORLD` / `UNIVERSITY` / `CONTACT` に更新。
+  3. `data/rankings.json`・`data/map-facilities.json` に宿泊可・ふるさと納税・楽天トラベルURL情報を追加し、`ランキング/index.html`・`reviews/index.html`（`scripts/gen_reviews.py`）・ふるさと納税コラム記事に「🏨 楽天宿泊」「🎁 ふるさと納税」の絞り込み・リンクチップ・特集一覧を追加。
+- **検証結果**：`build_rankings.py --check`・`build_map_data.py --check`・`check_url_data.py`・Node構文検査すべて合格。
 
 ## 2026-11-17〜11-20 メニュー・見出しの英語大文字統一、MAP共通ヘッダー・フッター追加、「⑨独自性」統一
 

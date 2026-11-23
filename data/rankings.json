@@ -96,7 +96,9 @@
         "a8": 5.0,
         "a9": 8.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "ウェルビー栄",
@@ -121,7 +123,10 @@
         "a8": 6.0,
         "a9": 8.0,
         "a10": 6.0
-      }
+      },
+      "stay": true,
+      "furusato": true,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D17651"
     },
     {
       "name": "サウナしきじ",
@@ -146,7 +151,9 @@
         "a8": 6.0,
         "a9": 8.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ウェルビー福岡",
@@ -171,7 +178,10 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": true,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D11007"
     },
     {
       "name": "オアシスサウナ アスティル",
@@ -196,7 +206,9 @@
         "a8": 5.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "テルマー湯",
@@ -221,7 +233,9 @@
         "a8": 7.0,
         "a9": 7.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "スパラクーア",
@@ -246,7 +260,9 @@
         "a8": 8.0,
         "a9": 8.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "上野ステーションホステル オリエンタル3",
@@ -271,7 +287,9 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "カプセルホテル＆サウナ サンフラワー巣鴨",
@@ -296,7 +314,9 @@
         "a8": 6.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "相模健康センター",
@@ -321,7 +341,9 @@
         "a8": 6.0,
         "a9": 8.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "横浜天然温泉 ヨコヤマ・ユーランド鶴見",
@@ -346,7 +368,9 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "スパワールド",
@@ -371,7 +395,9 @@
         "a8": 6.0,
         "a9": 10.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "ニコーリフレ",
@@ -396,7 +422,10 @@
         "a8": 5.0,
         "a9": 6.0,
         "a10": 7.0
-      }
+      },
+      "stay": true,
+      "furusato": true,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D67899"
     },
     {
       "name": "東京染井温泉 SAKURA",
@@ -421,7 +450,9 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ゆ家 和ごころ 吉の湯",
@@ -446,7 +477,9 @@
         "a8": 5.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "上野ステーションホステル オリエンタル2",
@@ -471,7 +504,10 @@
         "a8": 5.0,
         "a9": 7.0,
         "a10": 6.0
-      }
+      },
+      "stay": true,
+      "furusato": false,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D76363"
     },
     {
       "name": "上野ステーションホステル オリエンタル1",
@@ -496,7 +532,10 @@
         "a8": 5.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": false,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D78114"
     },
     {
       "name": "富士見湯",
@@ -521,7 +560,9 @@
         "a8": 4.0,
         "a9": 4.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "仙川 湯けむりの里",
@@ -546,7 +587,9 @@
         "a8": 6.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "板橋天然温泉 スパディオ",
@@ -571,7 +614,9 @@
         "a8": 5.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "タカラ湯",
@@ -596,7 +641,9 @@
         "a8": 5.0,
         "a9": 7.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "東京荻窪天然温泉 なごみの湯",
@@ -621,7 +668,9 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "前野原温泉 さやの湯処",
@@ -646,7 +695,9 @@
         "a8": 6.0,
         "a9": 8.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "有馬温泉 かんぽの宿",
@@ -671,7 +722,9 @@
         "a8": 5.0,
         "a9": 7.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "神戸ハーバーランド温泉 万葉倶楽部",
@@ -696,7 +749,10 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": true,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D107853"
     },
     {
       "name": "510グループ AKスパ",
@@ -721,7 +777,9 @@
         "a8": 5.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "サウナセンター",
@@ -746,7 +804,10 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 6.0
-      }
+      },
+      "stay": true,
+      "furusato": false,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D179670"
     },
     {
       "name": "ふくの湯",
@@ -771,7 +832,9 @@
         "a8": 6.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "音戸温泉",
@@ -796,7 +859,9 @@
         "a8": 4.0,
         "a9": 5.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "らかんの湯",
@@ -821,7 +886,9 @@
         "a8": 8.0,
         "a9": 9.0,
         "a10": 7.0
-      }
+      },
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "佐賀大和温泉ホテルアマンディ",
@@ -846,7 +913,10 @@
         "a8": 6.0,
         "a9": 7.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": false,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D136951"
     },
     {
       "name": "五香湯",
@@ -871,7 +941,9 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "下松健康センター",
@@ -884,7 +956,9 @@
       "taipa": 18.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.k-park.co.jp/park/"
+      "official": "https://www.k-park.co.jp/park/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "照葉スパリゾート",
@@ -897,7 +971,9 @@
       "taipa": 23.7,
       "slug": null,
       "closed": false,
-      "official": "https://www.terihaspa.jp/"
+      "official": "https://www.terihaspa.jp/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "泉天空の湯 有明ガーデン",
@@ -910,7 +986,9 @@
       "taipa": 29,
       "slug": null,
       "closed": false,
-      "official": "https://www.shopping-sumitomo-rd.com/ariake/spa-izumi/"
+      "official": "https://www.shopping-sumitomo-rd.com/ariake/spa-izumi/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "TOTONOI",
@@ -935,7 +1013,9 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "京王高尾山温泉 / 極楽湯",
@@ -960,7 +1040,9 @@
         "a8": 6.0,
         "a9": 6.0,
         "a10": 5.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "りっかりっかの湯",
@@ -973,7 +1055,9 @@
       "taipa": 23.4,
       "slug": null,
       "closed": false,
-      "official": "https://www.nahacen.com/rikka/index.html"
+      "official": "https://www.nahacen.com/rikka/index.html",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "瀬長島ホテル 龍神の湯",
@@ -998,7 +1082,9 @@
         "a8": 6.0,
         "a9": 10.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "スカイスパ",
@@ -1023,7 +1109,10 @@
         "a8": 6.0,
         "a9": 7.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": true,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D28604"
     },
     {
       "name": "神戸サウナ",
@@ -1048,7 +1137,10 @@
         "a8": 6.0,
         "a9": 7.0,
         "a10": 6.0
-      }
+      },
+      "stay": true,
+      "furusato": true,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D20516"
     },
     {
       "name": "お風呂の国",
@@ -1061,7 +1153,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://ofuronokuni.co.jp/"
+      "official": "https://ofuronokuni.co.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "成田空港空の湯",
@@ -1074,7 +1168,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://soranoyu.com/"
+      "official": "https://soranoyu.com/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "寿湯",
@@ -1087,7 +1183,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://kotobukiyu.jp/"
+      "official": "https://kotobukiyu.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "スパプレジデント",
@@ -1100,7 +1198,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://saunaandco.jp/?utm_source=google&utm_medium=map&utm_campaign=saunaandco"
+      "official": "https://saunaandco.jp/?utm_source=google&utm_medium=map&utm_campaign=saunaandco",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "綱島源泉湯けむりの庄",
@@ -1113,7 +1213,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://www.yukemurinosato.com/tsunashima/"
+      "official": "https://www.yukemurinosato.com/tsunashima/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "お風呂の王様",
@@ -1126,7 +1228,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://www.ousama2603.com/"
+      "official": "https://www.ousama2603.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ほのゆ 宇品店",
@@ -1139,7 +1243,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://www.honoyu.jp/ujina/"
+      "official": "https://www.honoyu.jp/ujina/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "Yunomori Onsen & Spa",
@@ -1152,7 +1258,9 @@
       "taipa": 61,
       "slug": null,
       "closed": false,
-      "official": "https://www.yunomorionsen.com/sukhumvit/"
+      "official": "https://www.yunomorionsen.com/sukhumvit/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "高輪SAUNAS",
@@ -1165,7 +1273,9 @@
       "taipa": 37.1,
       "slug": null,
       "closed": false,
-      "official": "https://saunas-saunas.com/takanawa/"
+      "official": "https://saunas-saunas.com/takanawa/",
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "カプセルホテル&サウナ ジートピア",
@@ -1178,7 +1288,9 @@
       "taipa": 22.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.funabashi-sauna.com/"
+      "official": "https://www.funabashi-sauna.com/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "SATOYAMA TERRACE",
@@ -1191,7 +1303,9 @@
       "taipa": 17.7,
       "slug": null,
       "closed": false,
-      "official": "https://satoyama-terrace.com/"
+      "official": "https://satoyama-terrace.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ベネトレ広島店",
@@ -1204,7 +1318,9 @@
       "taipa": 32.6,
       "slug": null,
       "closed": false,
-      "official": "https://bene-tre.com/"
+      "official": "https://bene-tre.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "広島パシフィックホテル サウナ 亀の家",
@@ -1217,7 +1333,9 @@
       "taipa": 36.6,
       "slug": null,
       "closed": false,
-      "official": "https://japoncompany.business/hiroshima/571338-"
+      "official": "https://japoncompany.business/hiroshima/571338-",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "スパシーレ祇園",
@@ -1230,7 +1348,9 @@
       "taipa": 29,
       "slug": null,
       "closed": false,
-      "official": "https://spaseare-gion.jp/"
+      "official": "https://spaseare-gion.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "スーパー銭湯 雲母の里",
@@ -1243,7 +1363,9 @@
       "taipa": 21.9,
       "slug": null,
       "closed": false,
-      "official": "https://unmonosato.jp/"
+      "official": "https://unmonosato.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "NOT BUSY サウナ&カフェ",
@@ -1256,7 +1378,9 @@
       "taipa": 13.8,
       "slug": null,
       "closed": false,
-      "official": "https://notdusy.com/reserve/notbusy"
+      "official": "https://notdusy.com/reserve/notbusy",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "いつつばしの里",
@@ -1269,7 +1393,9 @@
       "taipa": 16.5,
       "slug": null,
       "closed": false,
-      "official": "https://www.iwakunikankohotel.co.jp/onsen/"
+      "official": "https://www.iwakunikankohotel.co.jp/onsen/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "フレスパランド カッタの湯",
@@ -1282,7 +1408,9 @@
       "taipa": 17.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.fukunoyu.com/kattano-yu/"
+      "official": "https://www.fukunoyu.com/kattano-yu/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "天然温泉コロナの湯 小倉店",
@@ -1295,7 +1423,9 @@
       "taipa": 30,
       "slug": null,
       "closed": false,
-      "official": "https://www.korona.co.jp/onsen/kok/"
+      "official": "https://www.korona.co.jp/onsen/kok/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "塚原から風呂(からふろ)",
@@ -1308,7 +1438,9 @@
       "taipa": 12,
       "slug": null,
       "closed": false,
-      "official": "https://karaburo0.webnode.jp/"
+      "official": "https://karaburo0.webnode.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "sauna kolme kylä",
@@ -1321,7 +1453,9 @@
       "taipa": 22.3,
       "slug": null,
       "closed": false,
-      "official": "https://sauna-kolme-kyla.jp/"
+      "official": "https://sauna-kolme-kyla.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "カプセル&サウナ日本",
@@ -1334,7 +1468,9 @@
       "taipa": 36,
       "slug": null,
       "closed": false,
-      "official": "https://sauna.furec.jp/"
+      "official": "https://sauna.furec.jp/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "8.SAUNA",
@@ -1347,7 +1483,9 @@
       "taipa": 26.6,
       "slug": null,
       "closed": false,
-      "official": "https://8-sauna.jp/"
+      "official": "https://8-sauna.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ゴールデンタイム高松",
@@ -1360,7 +1498,9 @@
       "taipa": 42.2,
       "slug": null,
       "closed": false,
-      "official": "http://www.goldentime-takamatsu.com/"
+      "official": "http://www.goldentime-takamatsu.com/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "亜熱帯サウナ",
@@ -1373,7 +1513,9 @@
       "taipa": 20.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.instagram.com/anettai_sauna/"
+      "official": "https://www.instagram.com/anettai_sauna/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "EMウェルネス",
@@ -1386,7 +1528,9 @@
       "taipa": 18.1,
       "slug": null,
       "closed": false,
-      "official": "https://kurashinohakko.jp/spa/"
+      "official": "https://kurashinohakko.jp/spa/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "サ郷kakeRu",
@@ -1411,7 +1555,9 @@
         "a8": 6.0,
         "a9": 10.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "saunahouse",
@@ -1424,7 +1570,9 @@
       "taipa": 27.3,
       "slug": null,
       "closed": false,
-      "official": "https://sauna-house.jp/"
+      "official": "https://sauna-house.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "御成桑拿",
@@ -1437,7 +1585,9 @@
       "taipa": 21.6,
       "slug": null,
       "closed": false,
-      "official": "https://onari-sauna.com/"
+      "official": "https://onari-sauna.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ぬかとゆげ",
@@ -1450,7 +1600,9 @@
       "taipa": 35.4,
       "slug": null,
       "closed": false,
-      "official": "https://nuka-yuge.com/ryokin"
+      "official": "https://nuka-yuge.com/ryokin",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "COCOFURO おおみね湯",
@@ -1463,7 +1615,9 @@
       "taipa": 31.4,
       "slug": null,
       "closed": false,
-      "official": "https://cocofuro.com/oomineyu/"
+      "official": "https://cocofuro.com/oomineyu/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "サウナ&カプセルホテル ルーマプラザ",
@@ -1476,7 +1630,9 @@
       "taipa": 39.3,
       "slug": null,
       "closed": false,
-      "official": "http://rumor-plaza.jp/"
+      "official": "http://rumor-plaza.jp/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "MACHI:SAUNA HIROSHIMA",
@@ -1489,7 +1645,9 @@
       "taipa": 33.2,
       "slug": null,
       "closed": false,
-      "official": "https://resauna.jp/hiroshima"
+      "official": "https://resauna.jp/hiroshima",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "塩屋天然温泉 ほの湯楽々園",
@@ -1502,7 +1660,9 @@
       "taipa": 23.7,
       "slug": null,
       "closed": false,
-      "official": "https://www.honoyu.jp/rakurakuen/"
+      "official": "https://www.honoyu.jp/rakurakuen/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "カンデオホテルズ広島八丁堀",
@@ -1515,7 +1675,9 @@
       "taipa": 28.5,
       "slug": null,
       "closed": false,
-      "official": "https://www.candeohotels.com/ja/hiroshima-hatchobori/"
+      "official": "https://www.candeohotels.com/ja/hiroshima-hatchobori/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "五日市天然温泉ゆらゆら",
@@ -1528,7 +1690,9 @@
       "taipa": 22.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.yura2.com/"
+      "official": "https://www.yura2.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "関門の湯 ドーミーインPREMIUM下関",
@@ -1541,7 +1705,9 @@
       "taipa": 19.9,
       "slug": null,
       "closed": false,
-      "official": "https://dormy-hotels.com/dormyinn/hotels/shimonoseki/"
+      "official": "https://dormy-hotels.com/dormyinn/hotels/shimonoseki/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "WakuWaku 湧く和来",
@@ -1554,7 +1720,9 @@
       "taipa": 24.5,
       "slug": null,
       "closed": false,
-      "official": "https://wakuwaku-onsenfitness.com/"
+      "official": "https://wakuwaku-onsenfitness.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "別府温泉保養ランド",
@@ -1567,7 +1735,9 @@
       "taipa": 24.1,
       "slug": null,
       "closed": false,
-      "official": "https://hoyoland.net/"
+      "official": "https://hoyoland.net/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "寒の地獄旅館",
@@ -1592,7 +1762,10 @@
         "a8": 6.0,
         "a9": 10.0,
         "a10": 6.0
-      }
+      },
+      "stay": true,
+      "furusato": true,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D147437"
     },
     {
       "name": "サウナ海",
@@ -1605,7 +1778,9 @@
       "taipa": 28.1,
       "slug": null,
       "closed": false,
-      "official": "https://saunakai.com/"
+      "official": "https://saunakai.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ホテル・アンドルームス那覇ポート",
@@ -1618,7 +1793,9 @@
       "taipa": 29,
       "slug": null,
       "closed": false,
-      "official": "https://www.hotel-androoms.com/anp/?utm_source=google&utm_medium=gbp&utm_campaign=gbp_anp"
+      "official": "https://www.hotel-androoms.com/anp/?utm_source=google&utm_medium=gbp&utm_campaign=gbp_anp",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "サウナの珠湯",
@@ -1631,7 +1808,9 @@
       "taipa": 32.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.instagram.com/sauna_tamayu69"
+      "official": "https://www.instagram.com/sauna_tamayu69",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "空庭温泉 OSAKA BAY TOWER",
@@ -1644,7 +1823,9 @@
       "taipa": 31.8,
       "slug": null,
       "closed": false,
-      "official": "https://solaniwa.com/"
+      "official": "https://solaniwa.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "YUBUNE SAUNA PARK はにゅうの湯",
@@ -1669,7 +1850,9 @@
         "a8": 8.0,
         "a9": 10.0,
         "a10": 8.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "COCOFURO かが浴場",
@@ -1682,7 +1865,9 @@
       "taipa": 29.8,
       "slug": null,
       "closed": false,
-      "official": "https://cocofuro.com/kagayokujo/"
+      "official": "https://cocofuro.com/kagayokujo/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "SaunaLab Kanda",
@@ -1695,7 +1880,9 @@
       "taipa": 35.3,
       "slug": null,
       "closed": false,
-      "official": "https://saunalab.jp/kanda/"
+      "official": "https://saunalab.jp/kanda/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "COCOFURO ますの湯",
@@ -1708,7 +1895,9 @@
       "taipa": 22,
       "slug": null,
       "closed": false,
-      "official": "https://cocofuro.com/masunoyu/"
+      "official": "https://cocofuro.com/masunoyu/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "豊島園 庭の湯",
@@ -1721,7 +1910,9 @@
       "taipa": 30.7,
       "slug": null,
       "closed": false,
-      "official": "https://www.seibu-leisure.co.jp/niwanoyu/"
+      "official": "https://www.seibu-leisure.co.jp/niwanoyu/",
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "ウェルビー今池",
@@ -1734,7 +1925,9 @@
       "taipa": 37.1,
       "slug": null,
       "closed": false,
-      "official": "https://www.wellbe.co.jp/imaike/"
+      "official": "https://www.wellbe.co.jp/imaike/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "SAUNA RESORT 天光の湯",
@@ -1747,7 +1940,9 @@
       "taipa": 28.9,
       "slug": null,
       "closed": false,
-      "official": "https://tenko-spa.jp/"
+      "official": "https://tenko-spa.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "四日市温泉 おふろcafé 湯守座",
@@ -1760,7 +1955,9 @@
       "taipa": 35.4,
       "slug": null,
       "closed": false,
-      "official": "https://ofurocafe-yumoriza.com/"
+      "official": "https://ofurocafe-yumoriza.com/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "ザ・センチュリオンサウナ札幌",
@@ -1773,7 +1970,9 @@
       "taipa": 41.5,
       "slug": null,
       "closed": false,
-      "official": "https://www.centurion-hotel.com/sapporo/"
+      "official": "https://www.centurion-hotel.com/sapporo/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "芦別温泉 おふろcafé 星遊館",
@@ -1786,7 +1985,9 @@
       "taipa": 15,
       "slug": null,
       "closed": false,
-      "official": "https://ofurocafe-seiyukan.com/"
+      "official": "https://ofurocafe-seiyukan.com/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "北こぶし知床 ホテル&リゾート",
@@ -1799,7 +2000,9 @@
       "taipa": 8.7,
       "slug": null,
       "closed": false,
-      "official": "https://www.shiretoko.co.jp/"
+      "official": "https://www.shiretoko.co.jp/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "KIKI知床 ナチュラルリゾート",
@@ -1812,7 +2015,9 @@
       "taipa": 8.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.kikishiretoko.co.jp/"
+      "official": "https://www.kikishiretoko.co.jp/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "吹上温泉保養センター 白銀荘",
@@ -1825,7 +2030,9 @@
       "taipa": 11.2,
       "slug": null,
       "closed": false,
-      "official": "http://kamifurano-hokkaido.com/?page_id=2"
+      "official": "http://kamifurano-hokkaido.com/?page_id=2",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "常総ONSEN&SAUNA お湯むすび",
@@ -1838,7 +2045,9 @@
       "taipa": 18.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.oyumusubi.com/"
+      "official": "https://www.oyumusubi.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "多摩境天然温泉 森乃彩",
@@ -1851,7 +2060,9 @@
       "taipa": 23,
       "slug": null,
       "closed": false,
-      "official": "https://morinoirodori.com/"
+      "official": "https://morinoirodori.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "生姜サウナ 金の亀",
@@ -1864,7 +2075,9 @@
       "taipa": 33.2,
       "slug": null,
       "closed": false,
-      "official": "https://kinnokame.com/"
+      "official": "https://kinnokame.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "サウナリゾートオリエンタル赤坂",
@@ -1877,7 +2090,9 @@
       "taipa": 36.5,
       "slug": null,
       "closed": false,
-      "official": "https://www.centurion-hotel.com/sauna-oriental/"
+      "official": "https://www.centurion-hotel.com/sauna-oriental/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "サウナ横綱 本川越店",
@@ -1890,7 +2105,9 @@
       "taipa": 20,
       "slug": null,
       "closed": false,
-      "official": "https://sauna-yokozuna.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP"
+      "official": "https://sauna-yokozuna.com/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "タイムズ スパ・レスタ",
@@ -1903,7 +2120,9 @@
       "taipa": 31.8,
       "slug": null,
       "closed": false,
-      "official": "http://www.timesspa-resta.jp/"
+      "official": "http://www.timesspa-resta.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "南柏天然温泉すみれ",
@@ -1916,7 +2135,9 @@
       "taipa": 28.5,
       "slug": null,
       "closed": false,
-      "official": "https://minamikashiwa-sumire.com/"
+      "official": "https://minamikashiwa-sumire.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "花園温泉 sauna kukka",
@@ -1929,7 +2150,9 @@
       "taipa": 31.8,
       "slug": null,
       "closed": false,
-      "official": "https://sauna-kukka.jp/"
+      "official": "https://sauna-kukka.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "入船温泉",
@@ -1942,7 +2165,9 @@
       "taipa": 26.7,
       "slug": null,
       "closed": false,
-      "official": "https://www.irihune.co.jp/"
+      "official": "https://www.irihune.co.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "とれとれの湯",
@@ -1955,7 +2180,9 @@
       "taipa": 10.3,
       "slug": null,
       "closed": false,
-      "official": "https://toretore.com/yu/"
+      "official": "https://toretore.com/yu/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "SHIRAHAMA KEYTERRACE",
@@ -1968,7 +2195,9 @@
       "taipa": 9.5,
       "slug": null,
       "closed": false,
-      "official": "https://www.keyterrace.co.jp/"
+      "official": "https://www.keyterrace.co.jp/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "二ノ丸温泉",
@@ -1981,7 +2210,9 @@
       "taipa": 12.7,
       "slug": null,
       "closed": false,
-      "official": "https://ninomaru-onsen.jp/"
+      "official": "https://ninomaru-onsen.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "松本湯",
@@ -1994,7 +2225,9 @@
       "taipa": 30.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.matsumoto-yu.com/"
+      "official": "https://www.matsumoto-yu.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "弁天湯",
@@ -2007,7 +2240,9 @@
       "taipa": 23.9,
       "slug": null,
       "closed": false,
-      "official": "https://bentenyu.jimdo.com/"
+      "official": "https://bentenyu.jimdo.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "SPABLIC 赤坂湯屋",
@@ -2020,7 +2255,9 @@
       "taipa": 33.7,
       "slug": null,
       "closed": false,
-      "official": "https://spablic.com/"
+      "official": "https://spablic.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "黄金湯",
@@ -2033,7 +2270,9 @@
       "taipa": 29.8,
       "slug": null,
       "closed": false,
-      "official": "https://koganeyu.com/"
+      "official": "https://koganeyu.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "温泉バルコニー キング&クイーン",
@@ -2046,7 +2285,9 @@
       "taipa": 26.2,
       "slug": null,
       "closed": false,
-      "official": "https://king-and-queen.site/"
+      "official": "https://king-and-queen.site/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "8Seas Sauna HIRA",
@@ -2059,7 +2300,9 @@
       "taipa": 16.9,
       "slug": null,
       "closed": false,
-      "official": "https://8sauna.jp/"
+      "official": "https://8sauna.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ユートピア白玉温泉",
@@ -2072,7 +2315,9 @@
       "taipa": 31.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.utopia-shiratama.com/"
+      "official": "https://www.utopia-shiratama.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "お湯処 美福",
@@ -2085,7 +2330,9 @@
       "taipa": 29.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.mifuku-yu.co.jp/mobile/"
+      "official": "https://www.mifuku-yu.co.jp/mobile/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "きのえ温泉 ホテル清風館",
@@ -2098,7 +2345,9 @@
       "taipa": 11.9,
       "slug": null,
       "closed": false,
-      "official": "https://hotel-seifukan.co.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP"
+      "official": "https://hotel-seifukan.co.jp/?utm_source=GBP&utm_medium=GBP&utm_term=GBP&utm_content=GBP&utm_campaign=GBP",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "日乃出温泉",
@@ -2111,7 +2360,9 @@
       "taipa": 15.6,
       "slug": null,
       "closed": false,
-      "official": "https://hinode-onsen.com/"
+      "official": "https://hinode-onsen.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "向洋温泉",
@@ -2124,7 +2375,9 @@
       "taipa": 15.6,
       "slug": null,
       "closed": false,
-      "official": "https://maps.google.com/?cid=3961583006349286579"
+      "official": "https://maps.google.com/?cid=3961583006349286579",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ニューニシノサウナ＆天然温泉",
@@ -2137,7 +2390,9 @@
       "taipa": 33.2,
       "slug": null,
       "closed": false,
-      "official": "https://new-nishino.co.jp/hotel-onsen-spa-sauna/"
+      "official": "https://new-nishino.co.jp/hotel-onsen-spa-sauna/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "エクセルサウナタイセイ",
@@ -2150,7 +2405,9 @@
       "taipa": 29.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.taisei-grp.co.jp/excelsauna/"
+      "official": "https://www.taisei-grp.co.jp/excelsauna/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "天然温泉なにわの湯",
@@ -2163,7 +2420,9 @@
       "taipa": 30.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.naniwanoyu.com/"
+      "official": "https://www.naniwanoyu.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "みやの湯",
@@ -2176,7 +2435,9 @@
       "taipa": 24.5,
       "slug": null,
       "closed": false,
-      "official": "https://yutonamisha.com/sento/miyanoyu/"
+      "official": "https://yutonamisha.com/sento/miyanoyu/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "スッカマ源氏の湯",
@@ -2189,7 +2450,9 @@
       "taipa": 29.3,
       "slug": null,
       "closed": false,
-      "official": "https://genji-yu.com/sukkama/"
+      "official": "https://genji-yu.com/sukkama/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "なにわ健康ランド 湯〜トピア",
@@ -2202,7 +2465,9 @@
       "taipa": 26,
       "slug": null,
       "closed": false,
-      "official": "http://naniwa-utopia.com/"
+      "official": "http://naniwa-utopia.com/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "大阪サウナDESSE",
@@ -2227,7 +2492,9 @@
         "a8": 7.0,
         "a9": 9.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "白山湯 高辻店",
@@ -2240,7 +2507,9 @@
       "taipa": 27.7,
       "slug": null,
       "closed": false,
-      "official": "http://hakusanyu.co.jp/"
+      "official": "http://hakusanyu.co.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "天然温泉 延羽の湯 鶴橋店",
@@ -2253,7 +2522,9 @@
       "taipa": 32.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.nobuta123.co.jp/nobehatsuruhashi/"
+      "official": "https://www.nobuta123.co.jp/nobehatsuruhashi/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "KIWAMI SAUNA",
@@ -2266,7 +2537,9 @@
       "taipa": 31.3,
       "slug": null,
       "closed": false,
-      "official": "https://kiwamisauna.com/"
+      "official": "https://kiwamisauna.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "キャナルリゾート",
@@ -2291,7 +2564,9 @@
         "a8": 6.0,
         "a9": 8.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "リラクゼーションスパ アペゼ",
@@ -2304,7 +2579,9 @@
       "taipa": 28.1,
       "slug": null,
       "closed": false,
-      "official": "http://www.apz-spa.com/"
+      "official": "http://www.apz-spa.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "サウナイーグル",
@@ -2317,7 +2594,9 @@
       "taipa": 32,
       "slug": null,
       "closed": false,
-      "official": "https://sauna-eagle.com/"
+      "official": "https://sauna-eagle.com/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "オールドルーキーサウナ 新宿",
@@ -2330,7 +2609,9 @@
       "taipa": 33.3,
       "slug": null,
       "closed": false,
-      "official": "https://oldrookiesauna.com/"
+      "official": "https://oldrookiesauna.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "サウナと天然温泉 湯らっくす",
@@ -2355,7 +2636,9 @@
         "a8": 7.0,
         "a9": 8.0,
         "a10": 7.0
-      }
+      },
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "伊予の湯治場 喜助の湯",
@@ -2380,7 +2663,9 @@
         "a8": 6.0,
         "a9": 7.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "琴弾廻廊",
@@ -2393,7 +2678,9 @@
       "taipa": 17.7,
       "slug": null,
       "closed": false,
-      "official": "https://kotohiki-kairo.co.jp/"
+      "official": "https://kotohiki-kairo.co.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "スゴイサウナ赤坂店",
@@ -2406,7 +2693,9 @@
       "taipa": 34.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.sugoisauna.jp/"
+      "official": "https://www.sugoisauna.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "毎日サウナ 越谷店",
@@ -2419,7 +2708,9 @@
       "taipa": 23.4,
       "slug": null,
       "closed": false,
-      "official": "https://everyday-sauna.com/stores/%e8%b6%8a%e8%b0%b7%e5%ba%97/"
+      "official": "https://everyday-sauna.com/stores/%e8%b6%8a%e8%b0%b7%e5%ba%97/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "泊まれるサウナ屋さん 品川サウナ",
@@ -2432,7 +2723,9 @@
       "taipa": 38.2,
       "slug": null,
       "closed": false,
-      "official": "https://www.shinagawa-sauna.com/"
+      "official": "https://www.shinagawa-sauna.com/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "サウナ東京",
@@ -2445,7 +2738,9 @@
       "taipa": 38.7,
       "slug": null,
       "closed": false,
-      "official": "https://sauna-tokyo.jp/"
+      "official": "https://sauna-tokyo.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "sauna&bath NiHITARU",
@@ -2458,7 +2753,9 @@
       "taipa": 29.8,
       "slug": null,
       "closed": false,
-      "official": "https://nihitaru.com/"
+      "official": "https://nihitaru.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "Hiki stargazing sauna",
@@ -2471,7 +2768,9 @@
       "taipa": 25.8,
       "slug": null,
       "closed": false,
-      "official": "https://coubic.com/hiki_sauna"
+      "official": "https://coubic.com/hiki_sauna",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ひょうたん温泉",
@@ -2484,7 +2783,9 @@
       "taipa": 24.5,
       "slug": null,
       "closed": false,
-      "official": "https://www.hyotan-onsen.com/"
+      "official": "https://www.hyotan-onsen.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "筑紫野 天拝の郷",
@@ -2497,7 +2798,9 @@
       "taipa": 26,
       "slug": null,
       "closed": false,
-      "official": "http://www.tenpainosato.com/"
+      "official": "http://www.tenpainosato.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "湯屋 水禅",
@@ -2510,7 +2813,9 @@
       "taipa": 31.8,
       "slug": null,
       "closed": false,
-      "official": "https://www.matsuyahonkan.com/suizen/"
+      "official": "https://www.matsuyahonkan.com/suizen/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "しまなみ温泉 喜助の湯",
@@ -2523,7 +2828,9 @@
       "taipa": 38.4,
       "slug": null,
       "closed": false,
-      "official": "http://kisuke.com/yu-imabari/"
+      "official": "http://kisuke.com/yu-imabari/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "源気温泉 万博おゆば",
@@ -2536,7 +2843,9 @@
       "taipa": 26.3,
       "slug": null,
       "closed": false,
-      "official": "http://oyuba.com/banpaku/"
+      "official": "http://oyuba.com/banpaku/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "ヘルシー温泉タテバ",
@@ -2549,7 +2858,9 @@
       "taipa": 26.3,
       "slug": null,
       "closed": false,
-      "official": "https://tateba.com/"
+      "official": "https://tateba.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "箕面湯元 水春",
@@ -2562,7 +2873,9 @@
       "taipa": 26.7,
       "slug": null,
       "closed": false,
-      "official": "https://suisyun.jp/mino/"
+      "official": "https://suisyun.jp/mino/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "嘉島湯元水春",
@@ -2575,7 +2888,9 @@
       "taipa": 28,
       "slug": null,
       "closed": false,
-      "official": "https://suisyun.jp/kumamoto/"
+      "official": "https://suisyun.jp/kumamoto/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "サウナの梅湯",
@@ -2588,7 +2903,9 @@
       "taipa": 31.6,
       "slug": null,
       "closed": false,
-      "official": "https://yutonamisha.com/sento/umeyu/"
+      "official": "https://yutonamisha.com/sento/umeyu/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "東山湯温泉",
@@ -2601,7 +2918,9 @@
       "taipa": 26,
       "slug": null,
       "closed": false,
-      "official": "https://1010.kyoto/spot/higashiyamayuonsen/"
+      "official": "https://1010.kyoto/spot/higashiyamayuonsen/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "権堂温泉テルメDOME",
@@ -2614,7 +2933,9 @@
       "taipa": 37.2,
       "slug": null,
       "closed": false,
-      "official": "https://gondo-onsen.com/"
+      "official": "https://gondo-onsen.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "SAMBO SAUN",
@@ -2627,7 +2948,9 @@
       "taipa": 14.8,
       "slug": null,
       "closed": false,
-      "official": "https://sambo-saun.com/"
+      "official": "https://sambo-saun.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "The Sauna",
@@ -2640,7 +2963,9 @@
       "taipa": 23.4,
       "slug": null,
       "closed": false,
-      "official": "https://lampinc.co.jp/nojiriko/sauna/"
+      "official": "https://lampinc.co.jp/nojiriko/sauna/",
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "湯屋 FUROBAKKA",
@@ -2665,7 +2990,9 @@
         "a8": 7.0,
         "a9": 8.0,
         "a10": 7.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "天然温泉 アパスパ金沢中央",
@@ -2678,7 +3005,9 @@
       "taipa": 34.3,
       "slug": null,
       "closed": false,
-      "official": "https://www.apahotel.com/spa/kanazawa-chuo/?utm_source=google&utm_medium=maps"
+      "official": "https://www.apahotel.com/spa/kanazawa-chuo/?utm_source=google&utm_medium=maps",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "太閤山天然温泉 太閤の湯",
@@ -2691,7 +3020,9 @@
       "taipa": 25.8,
       "slug": null,
       "closed": false,
-      "official": "https://taikounoyu.jp/"
+      "official": "https://taikounoyu.jp/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "スパ・アルプス",
@@ -2704,7 +3035,9 @@
       "taipa": 34.3,
       "slug": null,
       "closed": false,
-      "official": "http://www.sauna-alps.com/"
+      "official": "http://www.sauna-alps.com/",
+      "stay": true,
+      "furusato": true
     },
     {
       "name": "ROOFTOP",
@@ -2717,7 +3050,9 @@
       "taipa": 35.4,
       "slug": null,
       "closed": false,
-      "official": "https://rooftopsauna.jp/"
+      "official": "https://rooftopsauna.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "東京湯楽城",
@@ -2730,7 +3065,9 @@
       "taipa": 18.1,
       "slug": null,
       "closed": false,
-      "official": "https://chi-hotelsresorts.com/yurakujo/"
+      "official": "https://chi-hotelsresorts.com/yurakujo/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "LC五稜郭ホテル",
@@ -2743,7 +3080,9 @@
       "taipa": 32.6,
       "slug": null,
       "closed": false,
-      "official": "https://lc-goryokaku-hotel.com/"
+      "official": "https://lc-goryokaku-hotel.com/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "ライオンサウナ新橋",
@@ -2756,7 +3095,9 @@
       "taipa": 39.7,
       "slug": null,
       "closed": false,
-      "official": "https://rembrandt-cabin.com/spa-shimbashi/"
+      "official": "https://rembrandt-cabin.com/spa-shimbashi/",
+      "stay": true,
+      "furusato": false
     },
     {
       "name": "天然温泉 平和島",
@@ -2769,7 +3110,9 @@
       "taipa": 29.5,
       "slug": null,
       "closed": false,
-      "official": "https://www.heiwajima-onsen.jp/"
+      "official": "https://www.heiwajima-onsen.jp/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "渋谷SAUNAS",
@@ -2794,7 +3137,9 @@
         "a8": 7.0,
         "a9": 8.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": true
     },
     {
       "name": "サウナ・アダムアンドイブ",
@@ -2807,7 +3152,9 @@
       "taipa": 25.8,
       "slug": null,
       "closed": false,
-      "official": "http://www.adamandeve.biz/"
+      "official": "http://www.adamandeve.biz/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "華の湯 片野店",
@@ -2820,7 +3167,9 @@
       "taipa": 23.2,
       "slug": null,
       "closed": false,
-      "official": "https://hananoyu-hiburan.com/"
+      "official": "https://hananoyu-hiburan.com/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "レステイウィンディ",
@@ -2833,7 +3182,9 @@
       "taipa": 29.3,
       "slug": null,
       "closed": false,
-      "official": "https://z-p15.www.instagram.com/theriversidesauna/"
+      "official": "https://z-p15.www.instagram.com/theriversidesauna/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "シーサイドスパ",
@@ -2846,7 +3197,9 @@
       "taipa": 16.3,
       "slug": null,
       "closed": false,
-      "official": "https://z-p15.www.instagram.com/theriversidesauna/"
+      "official": "https://z-p15.www.instagram.com/theriversidesauna/",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "SAUNA BUG",
@@ -2871,7 +3224,9 @@
         "a8": 7.0,
         "a9": 10.0,
         "a10": 6.0
-      }
+      },
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "黄金湯 新宿店",
@@ -2884,7 +3239,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://koganeyu.com/shinjuku"
+      "official": "https://koganeyu.com/shinjuku",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "毎日サウナ東京 幕張店",
@@ -2897,7 +3254,9 @@
       "taipa": 0,
       "slug": null,
       "closed": false,
-      "official": "https://everyday-sauna-tokyo.com/home"
+      "official": "https://everyday-sauna-tokyo.com/home",
+      "stay": false,
+      "furusato": false
     },
     {
       "name": "神戸 クアハウス",
@@ -2922,7 +3281,10 @@
         "a8": 5.0,
         "a9": 7.0,
         "a10": 5.0
-      }
+      },
+      "stay": true,
+      "furusato": false,
+      "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D15442"
     },
     {
       "name": "さふぃスパ沖縄",
@@ -2948,7 +3310,9 @@
         "a9": 8.0,
         "a10": 7.0
       },
-      "area": "宜野湾市"
+      "area": "宜野湾市",
+      "stay": true,
+      "furusato": true
     }
   ]
 }

@@ -29,7 +29,10 @@
       "a8": 5,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "草加健康センター-6"
   },
   {
     "name": "ウェルビー栄",
@@ -61,7 +64,11 @@
       "a8": 6,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "ウェルビー栄",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D17651"
   },
   {
     "name": "サウナしきじ",
@@ -93,7 +100,10 @@
       "a8": 6,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "サウナしきじ"
   },
   {
     "name": "ウェルビー福岡",
@@ -125,7 +135,11 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "ウェルビー福岡",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D11007"
   },
   {
     "name": "オアシスサウナ アスティル",
@@ -157,7 +171,10 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "オアシスサウナ-アスティル"
   },
   {
     "name": "テルマー湯",
@@ -189,7 +206,10 @@
       "a8": 7,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "テルマー湯"
   },
   {
     "name": "スパラクーア",
@@ -221,7 +241,10 @@
       "a8": 8,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "スパラクーア"
   },
   {
     "name": "上野ステーションホステル オリエンタル3",
@@ -253,7 +276,10 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "上野ステーションホステル-オリエンタル3"
   },
   {
     "name": "カプセルホテル＆サウナ サンフラワー巣鴨",
@@ -285,7 +311,10 @@
       "a8": 6,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "カプセルホテル＆サウナ-サンフラワー巣鴨"
   },
   {
     "name": "相模健康センター",
@@ -317,7 +346,10 @@
       "a8": 6,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "相模健康センター"
   },
   {
     "name": "横浜天然温泉 ヨコヤマ・ユーランド鶴見",
@@ -349,7 +381,10 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "横浜天然温泉-ヨコヤマ・ユーランド鶴見"
   },
   {
     "name": "スパワールド",
@@ -381,7 +416,10 @@
       "a8": 6,
       "a9": 10,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "スパワールド"
   },
   {
     "name": "ニコーリフレ",
@@ -413,7 +451,11 @@
       "a8": 5,
       "a9": 6,
       "a10": 7
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "ニコーリフレ",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D67899"
   },
   {
     "name": "東京染井温泉 SAKURA",
@@ -445,7 +487,10 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "東京染井温泉-sakura"
   },
   {
     "name": "ゆ家 和ごころ 吉の湯",
@@ -477,7 +522,10 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "ゆ家-和ごころ-吉の湯"
   },
   {
     "name": "上野ステーションホステル オリエンタル2",
@@ -509,7 +557,11 @@
       "a8": 5,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "上野ステーションホステル-オリエンタル2",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D76363"
   },
   {
     "name": "上野ステーションホステル オリエンタル1",
@@ -541,7 +593,11 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "上野ステーションホステル-オリエンタル1",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D78114"
   },
   {
     "name": "富士見湯",
@@ -573,7 +629,10 @@
       "a8": 4,
       "a9": 4,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "富士見湯"
   },
   {
     "name": "仙川 湯けむりの里",
@@ -605,7 +664,10 @@
       "a8": 6,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "仙川-湯けむりの里"
   },
   {
     "name": "板橋天然温泉 スパディオ",
@@ -637,7 +699,10 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "板橋天然温泉-スパディオ"
   },
   {
     "name": "タカラ湯",
@@ -669,7 +734,10 @@
       "a8": 5,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "タカラ湯"
   },
   {
     "name": "東京荻窪天然温泉 なごみの湯",
@@ -701,7 +769,10 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "東京荻窪天然温泉-なごみの湯"
   },
   {
     "name": "前野原温泉 さやの湯処",
@@ -733,7 +804,10 @@
       "a8": 6,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "前野原温泉-さやの湯処"
   },
   {
     "name": "有馬温泉 かんぽの宿",
@@ -765,7 +839,10 @@
       "a8": 5,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "有馬温泉-かんぽの宿"
   },
   {
     "name": "神戸ハーバーランド温泉 万葉倶楽部",
@@ -797,7 +874,11 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "神戸ハーバーランド温泉-万葉倶楽部",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D107853"
   },
   {
     "name": "510グループ AKスパ",
@@ -829,7 +910,10 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "510グループ-akスパ"
   },
   {
     "name": "サウナセンター",
@@ -861,7 +945,11 @@
       "a8": 6,
       "a9": 6,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "サウナセンター",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D179670"
   },
   {
     "name": "ふくの湯",
@@ -893,7 +981,10 @@
       "a8": 6,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "ふくの湯"
   },
   {
     "name": "音戸温泉",
@@ -925,7 +1016,10 @@
       "a8": 4,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "音戸温泉"
   },
   {
     "name": "らかんの湯",
@@ -957,7 +1051,10 @@
       "a8": 8,
       "a9": 9,
       "a10": 7
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "らかんの湯"
   },
   {
     "name": "佐賀大和温泉ホテルアマンディ",
@@ -989,7 +1086,11 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "佐賀大和温泉ホテルアマンディ",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D136951"
   },
   {
     "name": "五香湯",
@@ -1021,7 +1122,10 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "五香湯"
   },
   {
     "name": "下松健康センター",
@@ -1053,7 +1157,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "照葉スパリゾート",
@@ -1085,7 +1191,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "泉天空の湯 有明ガーデン",
@@ -1117,7 +1225,9 @@
       "a8": 7,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "TOTONOI",
@@ -1149,7 +1259,10 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "totonoi"
   },
   {
     "name": "京王高尾山温泉 / 極楽湯",
@@ -1181,7 +1294,10 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "京王高尾山温泉-極楽湯"
   },
   {
     "name": "りっかりっかの湯",
@@ -1213,7 +1329,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "瀬長島ホテル 龍神の湯",
@@ -1245,7 +1363,9 @@
       "a8": 6,
       "a9": 10,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "スカイスパ",
@@ -1277,7 +1397,11 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "スカイスパ",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D28604"
   },
   {
     "name": "神戸サウナ",
@@ -1309,7 +1433,11 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "神戸サウナ",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D20516"
   },
   {
     "name": "お風呂の国",
@@ -1341,7 +1469,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "成田空港空の湯",
@@ -1373,7 +1503,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "寿湯",
@@ -1405,7 +1537,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "スパプレジデント",
@@ -1437,7 +1571,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "綱島源泉湯けむりの庄",
@@ -1469,7 +1605,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "お風呂の王様",
@@ -1501,7 +1639,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ほのゆ 宇品店",
@@ -1533,7 +1673,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "高輪SAUNAS",
@@ -1565,7 +1707,9 @@
       "a8": 8,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": true
   },
   {
     "name": "カプセルホテル&サウナ ジートピア",
@@ -1597,7 +1741,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "SATOYAMA TERRACE",
@@ -1629,7 +1775,9 @@
       "a8": 7,
       "a9": 9,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ベネトレ広島店",
@@ -1661,7 +1809,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "広島パシフィックホテル サウナ 亀の家",
@@ -1693,7 +1843,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "スパシーレ祇園",
@@ -1725,7 +1877,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "スーパー銭湯 雲母の里",
@@ -1757,7 +1911,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "NOT BUSY サウナ&カフェ",
@@ -1789,7 +1945,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "いつつばしの里",
@@ -1821,7 +1979,9 @@
       "a8": 5,
       "a9": 9,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "フレスパランド カッタの湯",
@@ -1853,7 +2013,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "天然温泉コロナの湯 小倉店",
@@ -1885,7 +2047,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "塚原から風呂(からふろ)",
@@ -1917,7 +2081,9 @@
       "a8": 5,
       "a9": 10,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "sauna kolme kylä",
@@ -1949,7 +2115,9 @@
       "a8": 7,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "カプセル&サウナ日本",
@@ -1981,7 +2149,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "8.SAUNA",
@@ -2013,7 +2183,9 @@
       "a8": 5,
       "a9": 9,
       "a10": 9
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ゴールデンタイム高松",
@@ -2045,7 +2217,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "亜熱帯サウナ",
@@ -2077,7 +2251,9 @@
       "a8": 6,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "EMウェルネス",
@@ -2109,7 +2285,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "サ郷kakeRu",
@@ -2141,7 +2319,10 @@
       "a8": 6,
       "a9": 10,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "サ郷kakeru"
   },
   {
     "name": "saunahouse",
@@ -2173,7 +2354,9 @@
       "a8": 7,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "御成桑拿",
@@ -2205,7 +2388,9 @@
       "a8": 6,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ぬかとゆげ",
@@ -2237,7 +2422,9 @@
       "a8": 6,
       "a9": 9,
       "a10": 10
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "COCOFURO おおみね湯",
@@ -2269,7 +2456,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "サウナ&カプセルホテル ルーマプラザ",
@@ -2301,7 +2490,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "MACHI:SAUNA HIROSHIMA",
@@ -2333,7 +2524,9 @@
       "a8": 5,
       "a9": 7,
       "a10": 4
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "塩屋天然温泉 ほの湯楽々園",
@@ -2365,7 +2558,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "カンデオホテルズ広島八丁堀",
@@ -2397,7 +2592,9 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "五日市天然温泉ゆらゆら",
@@ -2429,7 +2626,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "関門の湯 ドーミーインPREMIUM下関",
@@ -2461,7 +2660,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "WakuWaku 湧く和来",
@@ -2493,7 +2694,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "別府温泉保養ランド",
@@ -2525,7 +2728,9 @@
       "a8": 5,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "寒の地獄旅館",
@@ -2557,7 +2762,11 @@
       "a8": 6,
       "a9": 10,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "寒の地獄旅館",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D147437"
   },
   {
     "name": "サウナ海",
@@ -2589,7 +2798,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ホテル・アンドルームス那覇ポート",
@@ -2621,7 +2832,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "サウナの珠湯",
@@ -2653,7 +2866,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "空庭温泉 OSAKA BAY TOWER",
@@ -2685,7 +2900,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "YUBUNE SAUNA PARK はにゅうの湯",
@@ -2717,7 +2934,10 @@
       "a8": 8,
       "a9": 10,
       "a10": 8
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "yubune-sauna-park-はにゅうの湯"
   },
   {
     "name": "COCOFURO かが浴場",
@@ -2749,7 +2969,9 @@
       "a8": 6,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "SaunaLab Kanda",
@@ -2781,7 +3003,9 @@
       "a8": 7,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "COCOFURO ますの湯",
@@ -2813,7 +3037,9 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "豊島園 庭の湯",
@@ -2845,7 +3071,9 @@
       "a8": 7,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": true
   },
   {
     "name": "ウェルビー今池",
@@ -2877,7 +3105,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "SAUNA RESORT 天光の湯",
@@ -2909,7 +3139,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "四日市温泉 おふろcafé 湯守座",
@@ -2941,7 +3173,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "ザ・センチュリオンサウナ札幌",
@@ -2973,7 +3207,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "芦別温泉 おふろcafé 星遊館",
@@ -3005,7 +3241,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "北こぶし知床 ホテル&リゾート",
@@ -3037,7 +3275,9 @@
       "a8": 6,
       "a9": 9,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "KIKI知床 ナチュラルリゾート",
@@ -3069,7 +3309,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "吹上温泉保養センター 白銀荘",
@@ -3101,7 +3343,9 @@
       "a8": 6,
       "a9": 10,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "常総ONSEN&SAUNA お湯むすび",
@@ -3133,7 +3377,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "多摩境天然温泉 森乃彩",
@@ -3165,7 +3411,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "生姜サウナ 金の亀",
@@ -3197,7 +3445,9 @@
       "a8": 6,
       "a9": 9,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "サウナリゾートオリエンタル赤坂",
@@ -3229,7 +3479,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "サウナ横綱 本川越店",
@@ -3261,7 +3513,9 @@
       "a8": 6,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "タイムズ スパ・レスタ",
@@ -3293,7 +3547,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "南柏天然温泉すみれ",
@@ -3325,7 +3581,9 @@
       "a8": 6,
       "a9": 9,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "花園温泉 sauna kukka",
@@ -3357,7 +3615,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "入船温泉",
@@ -3389,7 +3649,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "とれとれの湯",
@@ -3421,7 +3683,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "SHIRAHAMA KEYTERRACE",
@@ -3453,7 +3717,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "二ノ丸温泉",
@@ -3485,7 +3751,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "松本湯",
@@ -3517,7 +3785,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "弁天湯",
@@ -3549,7 +3819,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "SPABLIC 赤坂湯屋",
@@ -3581,7 +3853,9 @@
       "a8": 7,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "黄金湯",
@@ -3613,7 +3887,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "温泉バルコニー キング&クイーン",
@@ -3645,7 +3921,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "8Seas Sauna HIRA",
@@ -3677,7 +3955,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ユートピア白玉温泉",
@@ -3709,7 +3989,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "お湯処 美福",
@@ -3741,7 +4023,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "きのえ温泉 ホテル清風館",
@@ -3773,7 +4057,9 @@
       "a8": 5,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "日乃出温泉",
@@ -3805,7 +4091,9 @@
       "a8": 4,
       "a9": 4,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "向洋温泉",
@@ -3837,7 +4125,9 @@
       "a8": 4,
       "a9": 4,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ニューニシノサウナ＆天然温泉",
@@ -3869,7 +4159,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "エクセルサウナタイセイ",
@@ -3901,7 +4193,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "天然温泉なにわの湯",
@@ -3933,7 +4227,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "みやの湯",
@@ -3965,7 +4261,9 @@
       "a8": 6,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "スッカマ源氏の湯",
@@ -3997,7 +4295,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "なにわ健康ランド 湯〜トピア",
@@ -4029,7 +4329,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "大阪サウナDESSE",
@@ -4061,7 +4363,10 @@
       "a8": 7,
       "a9": 9,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "大阪サウナdesse"
   },
   {
     "name": "白山湯 高辻店",
@@ -4093,7 +4398,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "天然温泉 延羽の湯 鶴橋店",
@@ -4125,7 +4432,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "KIWAMI SAUNA",
@@ -4157,7 +4466,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "キャナルリゾート",
@@ -4189,7 +4500,10 @@
       "a8": 6,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "キャナルリゾート"
   },
   {
     "name": "リラクゼーションスパ アペゼ",
@@ -4221,7 +4535,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "サウナイーグル",
@@ -4253,7 +4569,9 @@
       "a8": 6,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "オールドルーキーサウナ 新宿",
@@ -4285,7 +4603,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "サウナと天然温泉 湯らっくす",
@@ -4317,7 +4637,10 @@
       "a8": 7,
       "a9": 8,
       "a10": 7
-    }
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "サウナと天然温泉-湯らっくす"
   },
   {
     "name": "伊予の湯治場 喜助の湯",
@@ -4349,7 +4672,10 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "伊予の湯治場-喜助の湯"
   },
   {
     "name": "琴弾廻廊",
@@ -4381,7 +4707,9 @@
       "a10": 5
     },
     "lat": 0,
-    "lng": 0
+    "lng": 0,
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "スゴイサウナ赤坂店",
@@ -4413,7 +4741,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "毎日サウナ 越谷店",
@@ -4445,7 +4775,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "泊まれるサウナ屋さん 品川サウナ",
@@ -4477,7 +4809,9 @@
       "a8": 7,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "サウナ東京",
@@ -4509,7 +4843,9 @@
       "a8": 7,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "sauna&bath NiHITARU",
@@ -4541,7 +4877,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "Hiki stargazing sauna",
@@ -4573,7 +4911,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ひょうたん温泉",
@@ -4605,7 +4945,9 @@
       "a8": 6,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "筑紫野 天拝の郷",
@@ -4637,7 +4979,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "湯屋 水禅",
@@ -4669,7 +5013,9 @@
       "a8": 9,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "しまなみ温泉 喜助の湯",
@@ -4701,7 +5047,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "源気温泉 万博おゆば",
@@ -4733,7 +5081,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "ヘルシー温泉タテバ",
@@ -4765,7 +5115,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "箕面湯元 水春",
@@ -4797,7 +5149,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "嘉島湯元水春",
@@ -4829,7 +5183,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "サウナの梅湯",
@@ -4861,7 +5217,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "東山湯温泉",
@@ -4893,7 +5251,9 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "権堂温泉テルメDOME",
@@ -4925,7 +5285,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "SAMBO SAUN",
@@ -4957,7 +5319,9 @@
       "a8": 6,
       "a9": 9,
       "a10": 8
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "The Sauna",
@@ -4989,7 +5353,9 @@
       "a8": 6,
       "a9": 9,
       "a10": 7
-    }
+    },
+    "canStay": false,
+    "furusato": true
   },
   {
     "name": "湯屋 FUROBAKKA",
@@ -5021,7 +5387,10 @@
       "a8": 7,
       "a9": 8,
       "a10": 7
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "湯屋-furobakka"
   },
   {
     "name": "天然温泉 アパスパ金沢中央",
@@ -5053,7 +5422,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "太閤山天然温泉 太閤の湯",
@@ -5085,7 +5456,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "スパ・アルプス",
@@ -5117,7 +5490,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": true
   },
   {
     "name": "ROOFTOP",
@@ -5149,7 +5524,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "東京湯楽城",
@@ -5181,7 +5558,9 @@
       "a8": 6,
       "a9": 8,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "LC五稜郭ホテル",
@@ -5213,7 +5592,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "ライオンサウナ新橋",
@@ -5245,7 +5626,9 @@
       "a8": 6,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false
   },
   {
     "name": "天然温泉 平和島",
@@ -5277,7 +5660,9 @@
       "a8": 6,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "渋谷SAUNAS",
@@ -5309,7 +5694,10 @@
       "a8": 7,
       "a9": 8,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": true,
+    "slug": "渋谷saunas"
   },
   {
     "name": "サウナ・アダムアンドイブ",
@@ -5341,7 +5729,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "華の湯 片野店",
@@ -5373,7 +5763,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "レステイウィンディ",
@@ -5405,7 +5797,9 @@
       "a8": 5,
       "a9": 5,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "シーサイドスパ",
@@ -5437,7 +5831,9 @@
       "a8": 5,
       "a9": 6,
       "a10": 5
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "SAUNA BUG",
@@ -5469,7 +5865,10 @@
       "a8": 7,
       "a9": 10,
       "a10": 6
-    }
+    },
+    "canStay": false,
+    "furusato": false,
+    "slug": "sauna-bug"
   },
   {
     "name": "黄金湯 新宿店",
@@ -5501,7 +5900,9 @@
       "a8": 0,
       "a9": 0,
       "a10": 0
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "毎日サウナ東京 幕張店",
@@ -5533,7 +5934,9 @@
       "a8": 0,
       "a9": 8,
       "a10": 10
-    }
+    },
+    "canStay": false,
+    "furusato": false
   },
   {
     "name": "神戸 クアハウス",
@@ -5565,6 +5968,79 @@
       "a8": 5,
       "a9": 7,
       "a10": 5
-    }
+    },
+    "canStay": true,
+    "furusato": false,
+    "slug": "神戸-クアハウス",
+    "rakuten_travel": "https://hb.afl.rakuten.co.jp/hgc/552beecb.7992d097.552beecc.dbc7733e/?pc=https%3A%2F%2Fimg.travel.rakuten.co.jp%2Fimage%2Ftr%2Fapi%2Fhs%2FdQ4dX%2F%3Ff_no%3D15442"
+  },
+  {
+    "name": "さふぃスパ沖縄",
+    "pref": "沖縄県",
+    "sourceRow": 182,
+    "area": "宜野湾市",
+    "posted": true,
+    "closed": false,
+    "price": 3850,
+    "stay": 8,
+    "perf": 68,
+    "cospa": 22.3,
+    "yenH": 481,
+    "url": "https://safi-spa.com/okinawa/",
+    "gaiki": true,
+    "rouryu": true,
+    "kind": "ホテル・リゾートスパ",
+    "target": "男女",
+    "lat": 0,
+    "lng": 0,
+    "axes": {
+      "a1": 6,
+      "a2": 7,
+      "a3": 7,
+      "a4": 7,
+      "a5": 6,
+      "a6": 7,
+      "a7": 7,
+      "a8": 6,
+      "a9": 8,
+      "a10": 7
+    },
+    "canStay": true,
+    "furusato": true,
+    "slug": "さふぃスパ沖縄"
+  },
+  {
+    "name": "Yunomori Onsen & Spa",
+    "pref": "海外（タイ）",
+    "sourceRow": 51,
+    "area": "バンコク / パタヤ",
+    "posted": false,
+    "closed": false,
+    "price": 2500,
+    "stay": 0,
+    "perf": 61,
+    "cospa": 0,
+    "yenH": 0,
+    "url": "https://www.yunomorionsen.com/sukhumvit/",
+    "gaiki": true,
+    "rouryu": false,
+    "kind": "日本式温泉＆スパ（海外）",
+    "target": "男女別",
+    "lat": 0,
+    "lng": 0,
+    "axes": {
+      "a1": 7,
+      "a2": 6,
+      "a3": 6,
+      "a4": 6,
+      "a5": 5,
+      "a6": 6,
+      "a7": 7,
+      "a8": 6,
+      "a9": 7,
+      "a10": 5
+    },
+    "canStay": false,
+    "furusato": false
   }
 ]
