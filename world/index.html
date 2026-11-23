@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>WORLD | GOMIRACHELIN</title>
+  <meta name="description" content="GOMIRACHELINが実際に足を運んで10項目で採点した、海外サウナ・スパ正直ガイド（WORLD）。国別・海外ランキングと詳細な採点内訳を掲載。">
+  <link rel="canonical" href="https://gomirachelin.github.io/sauna-cospa/world/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;600;700&family=Shippori+Mincho:wght@500;700;800&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/sauna-cospa/css/site.css">
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-GTF2GM6DNJ"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-GTF2GM6DNJ');
+  </script>
+  <style>
+    .world-hero {
+      background: linear-gradient(135deg, #12100b, #1d180e);
+      border: 1px solid #2e2618;
+      border-radius: 14px;
+      padding: 26px 22px;
+      margin: 18px 0 28px;
+    }
+    .world-hero .kicker-sm {
+      font-family: 'Oswald', sans-serif;
+      font-size: 11px;
+      letter-spacing: 4px;
+      color: #d4a017;
+      margin-bottom: 6px;
+    }
+    .world-hero h2 {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 21px;
+      color: #f0c33c;
+      margin-bottom: 10px;
+      line-height: 1.5;
+    }
+    .world-hero p {
+      font-size: 14px;
+      color: #d5cdbd;
+      line-height: 1.85;
+      margin: 0;
+    }
+    .country-tabs {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 20px;
+    }
+    .country-btn {
+      background: #14120e;
+      border: 1px solid #2e281b;
+      color: #c5bba3;
+      font-size: 13px;
+      font-weight: 500;
+      padding: 8px 16px;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: .16s;
+    }
+    .country-btn.on, .country-btn:hover {
+      background: #d4a017;
+      border-color: #d4a017;
+      color: #0a0a0a;
+      font-weight: 700;
+    }
+    .world-card {
+      background: #11100c;
+      border: 1px solid #2b2417;
+      border-left: 4px solid #d4a017;
+      border-radius: 12px;
+      padding: 22px;
+      margin-bottom: 20px;
+    }
+    .world-card-hd {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 14px;
+      flex-wrap: wrap;
+      border-bottom: 1px solid #231e14;
+      padding-bottom: 14px;
+      margin-bottom: 16px;
+    }
+    .world-country-tag {
+      display: inline-block;
+      font-size: 11px;
+      font-weight: 700;
+      color: #0a0a0a;
+      background: #d4a017;
+      padding: 2px 9px;
+      border-radius: 4px;
+      margin-bottom: 6px;
+      letter-spacing: 1px;
+    }
+    .world-card-hd h3 {
+      font-family: 'Shippori Mincho', serif;
+      font-size: 20px;
+      color: #f5c54c;
+      margin: 0 0 4px;
+    }
+    .world-loc {
+      font-size: 12px;
+      color: #9e9378;
+    }
+    .world-score-box {
+      text-align: right;
+      background: #18150f;
+      border: 1px solid #302819;
+      border-radius: 10px;
+      padding: 10px 16px;
+      min-width: 110px;
+    }
+    .world-score-box .num-val {
+      font-family: 'Oswald', sans-serif;
+      font-size: 30px;
+      font-weight: 700;
+      color: #d4a017;
+      line-height: 1;
+    }
+    .world-score-box .num-lbl {
+      font-family: 'Oswald', sans-serif;
+      font-size: 10px;
+      letter-spacing: 2px;
+      color: #8a7d5f;
+      margin-top: 3px;
+    }
+    .world-meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-bottom: 16px;
+    }
+    .world-meta span {
+      background: #181610;
+      border: 1px solid #2a2418;
+      font-size: 12px;
+      color: #d5cdbd;
+      padding: 4px 10px;
+      border-radius: 6px;
+    }
+    .axes-mini {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(175px, 1fr));
+      gap: 8px 12px;
+      background: #0d0c09;
+      border: 1px solid #221d13;
+      border-radius: 10px;
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+    .ax-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      font-size: 12px;
+      color: #c8bfa8;
+      border-bottom: 1px dashed #221d13;
+      padding-bottom: 4px;
+    }
+    .ax-row b {
+      font-family: 'Oswald', sans-serif;
+      font-size: 14px;
+      color: #f0c33c;
+    }
+    .world-notes {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-bottom: 16px;
+    }
+    @media (max-width: 640px) {
+      .world-notes { grid-template-columns: 1fr; }
+    }
+    .wn-box {
+      background: #15130e;
+      border: 1px solid #282216;
+      border-radius: 8px;
+      padding: 12px 14px;
+      font-size: 13px;
+      line-height: 1.75;
+    }
+    .wn-box .wn-ttl {
+      font-size: 12px;
+      font-weight: 700;
+      color: #d4a017;
+      margin-bottom: 4px;
+      letter-spacing: 1px;
+    }
+    .wn-box.con .wn-ttl { color: #b08d44; }
+    .world-acts {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .world-acts a {
+      text-decoration: none;
+      font-size: 12px;
+      font-weight: 700;
+      padding: 9px 16px;
+      border-radius: 7px;
+      transition: .15s;
+    }
+    .world-acts a.primary {
+      background: linear-gradient(135deg, #d4a017, #b8922a);
+      color: #0a0a0a;
+    }
+    .world-acts a.secondary {
+      background: #181611;
+      border: 1px solid #38301e;
+      color: #e8e2d4;
+    }
+  </style>
+</head>
+<body>
+<input type="checkbox" id="nav-check">
+<header class="site-header">
+  <div class="wrap nav">
+    <a class="brand" href="/sauna-cospa/">
+      <span class="mark">G</span>
+      <span>
+        <b>GOMIRACHELIN</b>
+        <span class="tag">Sauna Guide</span>
+      </span>
+    </a>
+    <button class="nav-toggle" type="button" onclick="document.getElementById('nav-check').click()" aria-label="メニュー">MENU</button>
+    <nav class="nav-links" aria-label="メインメニュー">
+        <a href="/sauna-cospa/why/">WHY</a>
+        <a href="/sauna-cospa/how/">HOW</a>
+        <a href="/sauna-cospa/ランキング/">RANKING</a>
+        <a href="/sauna-cospa/reviews/">REVIEWS</a>
+        <a href="/sauna-cospa/map/">AREA</a>
+        <a href="/sauna-cospa/world/" class="is-active">WORLD</a>
+        <a href="/sauna-cospa/sauna-university/">UNIVERSITY</a>
+        <a href="/sauna-cospa/お問い合わせ/">CONTACT</a>
+    </nav>
+  </div>
+</header>
+<main class="page-main"><article class="entry">
+  <header class="entry-head">
+    <p class="kicker">OVERSEAS SAUNA GUIDE</p>
+    <h1>WORLD</h1>
+  </header>
+  <div class="entry-body">
+    <div class="world-hero">
+      <div class="kicker-sm">WORLD SAUNA &amp; SPA</div>
+      <h2>世界のサウナも、同じ10の物差しで正直に。</h2>
+      <p>海外のサウナや温浴施設も、日本国内とまったく同じ10項目（①サウナ室②水風呂③休憩④動線⑤ロウリュ⑥スパ内施設⑦スパ外施設⑧清潔さ⑨独自性⑩ホスピタリティ）で採点しています。「海外だから特別扱い」はせず、払った料金に対してどれだけととのえるかを正直に記録していきます。</p>
+    </div>
+
+    <div class="country-tabs" aria-label="国・地域で絞り込む">
+      <button type="button" class="country-btn on" onclick="filterCountry('all', this)">すべて（1）</button>
+      <button type="button" class="country-btn" onclick="filterCountry('thailand', this)">🇹🇭 タイ（1）</button>
+    </div>
+
+    <div id="worldList">
+      <article class="world-card" data-country="thailand">
+        <div class="world-card-hd">
+          <div>
+            <span class="world-country-tag">🇹🇭 THAILAND ／ タイ（パタヤ・バンコク）</span>
+            <h3>Yunomori Onsen &amp; Spa（湯の森温泉＆スパ）</h3>
+            <div class="world-loc">エリア：タイ パタヤ ／ バンコク（Sukhumvit店ほか）</div>
+          </div>
+          <div class="world-score-box">
+            <div class="num-val">61.0</div>
+            <div class="num-lbl">OVERALL / 100</div>
+          </div>
+        </div>
+
+        <div class="world-meta">
+          <span>料金目安：約2,500円</span>
+          <span>種別：日本式温泉＆スパ（海外）</span>
+          <span>サウナ温度：フィンランドサウナ体感80℃強・スチーム約50〜55℃</span>
+        </div>
+
+        <div class="axes-mini" aria-label="10項目スコア内訳">
+          <div class="ax-row"><span>①サウナ</span><b>7 / 10</b></div>
+          <div class="ax-row"><span>②水風呂</span><b>6 / 10</b></div>
+          <div class="ax-row"><span>③休憩</span><b>6 / 10</b></div>
+          <div class="ax-row"><span>④動線</span><b>6 / 10</b></div>
+          <div class="ax-row"><span>⑤ロウリュ</span><b>5 / 10</b></div>
+          <div class="ax-row"><span>⑥スパ内施設</span><b>6 / 10</b></div>
+          <div class="ax-row"><span>⑦スパ外施設</span><b>7 / 10</b></div>
+          <div class="ax-row"><span>⑧清潔さ</span><b>6 / 10</b></div>
+          <div class="ax-row"><span>⑨独自性</span><b>7 / 10</b></div>
+          <div class="ax-row"><span>⑩ホスピタリティ</span><b>5 / 10</b></div>
+        </div>
+
+        <div class="world-notes">
+          <div class="wn-box">
+            <div class="wn-ttl">◎ 良い点（特徴・メリット）</div>
+            <p>カンチャナブリ温泉直送の温泉浴槽を完備し、タイにいながら日本式の本格スパ・温浴が体験できる。コスパの良いタイ古式マッサージ付きプランや、柚子オイル風呂など日本式を意識した設備・アメニティが充実。</p>
+          </div>
+          <div class="wn-box con">
+            <div class="wn-ttl">△ 惜しい点（注意点）</div>
+            <p>ロウリュは香りなしの水のみ。人の出入り（扉の開閉）でサウナ室の温度が下がりやすい傾向あり。店舗によって立地やアクセスが異なる。</p>
+          </div>
+        </div>
+
+        <div class="world-acts">
+          <a class="primary" href="https://www.google.com/maps/search/?api=1&amp;query=Yunomori+Onsen+%26+Spa+Thailand" target="_blank" rel="noopener">📍 Googleマップで場所を見る</a>
+          <a class="secondary" href="https://www.yunomorionsen.com/sukhumvit/" target="_blank" rel="noopener nofollow">🔗 公式サイトを見る</a>
+        </div>
+      </article>
+    </div>
+
+    <div class="review-nav-box" style="margin-top:36px;">
+      <p class="review-nav-title">国内のサウナも探す</p>
+      <div class="review-nav-grid">
+        <a class="review-nav-btn" href="/sauna-cospa/%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">🏆 全国ランキングを見る</a>
+        <a class="review-nav-btn" href="/sauna-cospa/map/">🗾 エリア・宿泊から探す（AREA）</a>
+        <a class="review-nav-btn" href="/sauna-cospa/reviews/">📖 レビュー記事一覧へ</a>
+        <a class="review-nav-btn" href="/sauna-cospa/10%E9%A0%85%E7%9B%AE%E5%88%A5%E3%83%A9%E3%83%B3%E3%82%AD%E3%83%B3%E3%82%B0/">📊 10項目別ランキング</a>
+      </div>
+    </div>
+  </div>
+</article></main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer-brand">
+      <div class="gold-rule"></div>
+      <div class="name">GOMIRACHELIN</div>
+      <div class="sub">Cospa Sauna Guide</div>
+    </div>
+    <ul class="footer-links">
+          <li><a href="/sauna-cospa/why/">WHY</a></li>
+          <li><a href="/sauna-cospa/how/">HOW</a></li>
+          <li><a href="/sauna-cospa/ランキング/">RANKING</a></li>
+          <li><a href="/sauna-cospa/10項目別ランキング/">EVALUATION</a></li>
+          <li><a href="/sauna-cospa/reviews/">REVIEWS</a></li>
+          <li><a href="/sauna-cospa/map/">AREA</a></li>
+          <li><a href="/sauna-cospa/world/">WORLD</a></li>
+          <li><a href="/sauna-cospa/sauna-university/">UNIVERSITY</a></li>
+          <li><a href="/sauna-cospa/お問い合わせ/">CONTACT</a></li>
+          <li><a href="/sauna-cospa/運営者情報/">運営者情報</a></li>
+          <li><a href="/sauna-cospa/プライバシーポリシー/">プライバシーポリシー</a></li>
+          <li><a href="/sauna-cospa/免責事項/">免責事項</a></li>
+    </ul>
+    <p class="footer-note">Amazonのアソシエイトとして、GOMIRACHELINは適格販売により収入を得ています。</p>
+    <p class="footer-copy">© 2026 GOMIRACHELIN　コスパで選ぶ、全国サウナ正直ガイド</p>
+  </div>
+</footer>
+<script>
+function filterCountry(c, btn) {
+  var btns = document.querySelectorAll('.country-btn');
+  for (var i = 0; i < btns.length; i++) btns[i].classList.remove('on');
+  if (btn) btn.classList.add('on');
+  var cards = document.querySelectorAll('.world-card');
+  for (var j = 0; j < cards.length; j++) {
+    cards[j].style.display = (c === 'all' || cards[j].getAttribute('data-country') === c) ? 'block' : 'none';
+  }
+}
+</script>
+</body>
+</html>

@@ -478,5 +478,21 @@
     "link": "https://gomirachelin.github.io/sauna-cospa/reviews/",
     "date": "2026-09-04T13:09:47",
     "type": "page"
+  },
+  {
+    "id": 59,
+    "slug": "world",
+    "title": "WORLD",
+    "link": "https://gomirachelin.github.io/sauna-cospa/world/",
+    "date": "2026-11-23T10:00:00",
+    "type": "page"
+  },
+  {
+    "id": 60,
+    "slug": "map",
+    "title": "AREA",
+    "link": "https://gomirachelin.github.io/sauna-cospa/map/",
+    "date": "2026-11-23T10:00:00",
+    "type": "page"
   }
 ]

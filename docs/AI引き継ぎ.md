@@ -1,8 +1,16 @@
 # AI引き継ぎ
 
-最終更新：2026-11-17
+最終更新：2026-11-23
 
-## 2026-11-17 メニュー・見出しの英語大文字統一、MAP共通ヘッダー・フッター追加、「⑨独自性」統一
+## 2026-11-23 「AREA」ページ刷新（白い地図廃止）、「WORLD」新設、楽天トラベル宿泊＆ふるさと納税絞り込み追加
+
+- **実施内容**：
+  1. `map/index.html` から白いLeaflet地図を廃止し、地方ボタン・都道府県チップ・条件フィルター（`🏨 泊まれるサウナ（楽天トラベル）`・`🎁 ふるさと納税対象`・`📖 正直レビュー記事あり`・`🍃 外気浴あり`・`🔥 ロウリュあり`）で施設カードを探せる「AREA」ページへ刷新（URL `/sauna-cospa/map/` は維持）。`scripts/build_map_data.py` もポリゴン依存を除去して176施設同期に対応。
+  2. 海外サウナ専用ページ `world/index.html`（`/sauna-cospa/world/`）を新設し、「Yunomori Onsen & Spa（タイ）」の10項目採点と特徴を掲載。全60ページのヘッダー・フッターナビを `WHY` / `HOW` / `RANKING` / `REVIEWS` / `AREA` / `WORLD` / `UNIVERSITY` / `CONTACT` に更新。
+  3. `data/rankings.json`・`data/map-facilities.json` に宿泊可・ふるさと納税・楽天トラベルURL情報を追加し、`ランキング/index.html`・`reviews/index.html`（`scripts/gen_reviews.py`）・ふるさと納税コラム記事に「🏨 楽天宿泊」「🎁 ふるさと納税」の絞り込み・リンクチップ・特集一覧を追加。
+- **検証結果**：`build_rankings.py --check`・`build_map_data.py --check`・`check_url_data.py`・Node構文検査すべて合格。
+
+## 2026-11-17〜11-20 メニュー・見出しの英語大文字統一、MAP共通ヘッダー・フッター追加、「⑨独自性」統一
 
 - **実施内容**：
   1. 全HTMLページ（56ファイル更新）および `scripts/gen_reviews.py` の上部メニューを `WHY` / `HOW` / `RANKING` / `REVIEWS` / `MAP` / `UNIVERSITY` / `CONTACT` に統一し、フッターも統一。
@@ -10,7 +18,7 @@
   3. `map/index.html` に共通ヘッダー・フッターを追加し、仮リンク「← GOMIRACHELINトップへ」を削除。
   4. `how/index.html`・`ランキング/index.html`・`scripts/gen_reviews.py`・`reviews/index.html`・`docs/10項目評価基準.md` の「⑨唯一無二性」を「⑨独自性」に統一。
 - **検証結果**：`build_rankings.py --check`・`build_map_data.py --check`・`check_url_data.py`・Node構文検査すべて合格。
-- **公開状況**：ローカル `main` にコミット済み。本番反映のため `kenji0618y/sauna-cospa-pr` 経由のPRマージ、または次回チャットでの直接 push が必要。
+- **公開状況**：2026-11-20 に PR #2（コミット `f6d963c` / `f99c800`）のマージにより本番（`gomirachelin/sauna-cospa` の `main`）へ反映・公開完了。なお、プロジェクト（作業ルーム）のリソースに個人リポジトリ `kenji0618y/lexicon-riders` と組織リポジトリ `gomirachelin/sauna-cospa` が両方登録されている限り、GitHub App の書き込みトークンは `kenji0618y` 側に限定されるため、次回以降も `kenji0618y/sauna-cospa-pr` 経由の PR マージ（またはプロジェクトから `lexicon-riders` を外す）で本番反映する。
 
 ## 2026-11-07 「WHY」をトップ扱いとし、旧トップをスリム化して「HOW」ページへ変更
 
