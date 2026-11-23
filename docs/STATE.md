@@ -22,7 +22,7 @@
      - `reviews/index.html`（および `scripts/gen_reviews.py`）の各施設行にも「🏨 楽天宿泊」「🎁 ふるさと納税」リンクチップを表示。
      - コラム記事 `サウナのふるさと納税｜実質2000円でととのう、コ/index.html` に「④ GOMIRACHELIN掲載！泊まれるサウナ（楽天トラベル）＆ふるさと納税でいける名店」特集カード一覧と、`AREA`・`RANKING` の絞り込みへの導線ボタンを追加。
 - 確認結果：`build_rankings.py --check`（176施設・採点49件）、`build_map_data.py --check`（176施設）、`check_url_data.py`（active=62, history=2, overlap=0）、および `map/index.html`・`ランキング/index.html`・`world/index.html` のJS構文検査にすべて合格。
-- 公開状況：ローカルの `main` ブランチにコミット済み（GitHubへ反映待ち）。
+- 公開状況：ローカルの `main` ブランチおよび GitHub 上のフォーク `kenji0618y/sauna-cospa-pr` の `main` ブランチ（コミット `9a16778`）へ push 済み。`https://github.com/gomirachelin/sauna-cospa/compare/main...kenji0618y:sauna-cospa-pr:main?expand=1` から「Create pull request」→「Merge pull request」を押すことで `gomirachelin/sauna-cospa` 本番へ即反映される。
 
 ## メニュー・見出しの英語統一、MAPの共通ヘッダー・フッター追加、「⑨独自性」統一（2026-11-17〜11-20）
 
