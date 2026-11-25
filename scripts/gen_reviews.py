@@ -9,7 +9,9 @@
   - data/urls.json（記事の公開日とタイトル）
 記事フォルダ（<slug>/index.html）が実際にあるものだけを一覧に載せます。
 """
-import re, json, os, html
+import re, json, os, html, sys
+sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+from seo_meta import apply_document
 
 # このスクリプトは <サイトのフォルダ>/scripts/ に置く想定。ひとつ上がサイトのルート。
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -146,7 +148,7 @@ page = """<!DOCTYPE html>
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>REVIEWS | GOMIRACHELIN</title>
+  <title>サウナ正直レビュー一覧｜GOMIRACHELIN</title>
   <meta name="description" content="{desc}">
   <link rel="canonical" href="https://gomirachelin.github.io/sauna-cospa/reviews/">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -258,6 +260,7 @@ if column_row:
                    + column_row + '\n  </div>\n')
 
 out = page.format(desc=e(DESC), rows="\n".join(rows), n=len(items), columnblock=columnblock)
+out = apply_document(out, "reviews/index.html")
 os.makedirs(os.path.join(ROOT, "reviews"), exist_ok=True)
 open(os.path.join(ROOT, "reviews/index.html"), "w", encoding="utf-8").write(out)
 print("生成しました: reviews/index.html  施設 %d 件 / コラム %d 件" % (len(items), 1 if column_row else 0))
