@@ -36,6 +36,7 @@ TITLES = {
     "world/index.html": "海外サウナガイド（WORLD）｜GOMIRACHELIN",
     "sauna-university/index.html": "サウナ大学｜入り方からととのうの科学まで — GOMIRACHELIN",
     "sauna-daigaku.html": "サウナ大学｜4段階で学ぶ無料のサウナ教科書 — GOMIRACHELIN",
+    "サウナハット-サウナマット/index.html": "サウナハット・サウナマットおすすめ比較｜GOMIRACHELIN",
     "お問い合わせ/index.html": "お問い合わせ｜GOMIRACHELIN",
     "運営者情報/index.html": "運営者情報｜GOMIRACHELIN",
     "プライバシーポリシー/index.html": "プライバシーポリシー｜GOMIRACHELIN",
@@ -55,6 +56,7 @@ DESCRIPTIONS = {
     "world/index.html": "GOMIRACHELINが現地で10項目採点した海外サウナ・スパのガイド。国ごとに正直な点数と特徴を掲載しています。",
     "sauna-university/index.html": "サウナの入り方、マナー、ととのう仕組み、水風呂、ロウリュ、歴史と文化、熱の物理学までを無料で学べるサウナ大学です。",
     "sauna-daigaku.html": "下段（初級）から中段・上段・ストーブ前（マスター）まで4段階。資格、熱の物理学、水風呂、ととのうの科学、世界のサウナ文化、サ飯、聖地巡礼、経営まで学べる無料教材です。",
+    "サウナハット-サウナマット/index.html": "サウナハットとサウナマットを、自分で比べてそのまま買える比較ページです。個別の愛用品は準備中でも、Amazonと楽天の検索から今すぐ選べます。",
     "お問い合わせ/index.html": "ご意見・ご感想、記事への指摘、掲載のご相談、取材のご依頼は、GOMIRACHELINのお問い合わせフォームから送れます。",
     "プライバシーポリシー/index.html": "個人情報の利用目的、広告、アクセス解析（Googleアナリティクス）の取り扱いを定めたGOMIRACHELINのプライバシーポリシーです。",
     "免責事項/index.html": "料金・営業時間・設備などの掲載情報は訪問または執筆時点のものです。最新情報は各施設にご確認ください。",
@@ -194,6 +196,7 @@ def page_kind(rel, text):
     if rel in (
         "why/index.html",
         "how/index.html",
+        "サウナハット-サウナマット/index.html",
         "ランキング/index.html",
         "10項目別ランキング/index.html",
         "reviews/index.html",
@@ -529,7 +532,7 @@ let quiz = 0;
 CONTENT.chapters.forEach(ch => (ch.lessons || []).forEach(ls => { quiz += (ls.quiz || []).length; }));
 const glossary = GLOSSARY.map(g => ({ t: g.t, r: g.r, d: g.d }));
 const zemi = ZEMI_LECTURES.map(m => ({
-  title: m.title, subtitle: m.subtitle || "",
+  title: m.title, subtitle: m.subtitle || "", intro: m.intro || "",
   lessons: (m.lessons || []).map(l => l.title)
 }));
 process.stdout.write(JSON.stringify({ chapters, glossary, zemi, quiz }));
@@ -597,11 +600,14 @@ def curriculum_html(data):
             parts.append("</article>")
     if data.get("zemi"):
         parts.append("<h2>経営講座（ゼミ）</h2>")
-        parts.append("<p>無料カリキュラムを終えると開く、サウナの開業を数字で考える講座です。</p>")
+        parts.append("<p>概要と40講のタイトルはどなたでも読めます。講義の本文は、経営ゼミ全体パック（税込3,000円）で読めます。</p>")
+        parts.append('<p><a href="#zemi" onclick="go(\'zemi\');return false;">経営ゼミの概要と購入へ</a></p>')
         for mod in data["zemi"]:
             parts.append(f"<h3>{esc(mod['title'])}</h3>")
             if mod.get("subtitle"):
                 parts.append(f"<p>{esc(mod['subtitle'])}</p>")
+            if mod.get("intro"):
+                parts.append(f"<p>{esc(mod['intro'])}</p>")
             if mod.get("lessons"):
                 parts.append("<ul>")
                 for title in mod["lessons"]:
